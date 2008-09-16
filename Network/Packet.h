@@ -1,0 +1,227 @@
+
+
+#ifndef Packet_H
+#define Packet_H
+
+
+// Bring in definitions of structs: GUID, sockaddr_in
+#include <winsock2.h>
+
+#include "..\Game\GameStartInfo\GameStartInfo.h"
+
+
+namespace OP2ForcedExport
+{
+
+	// Everything in this file should be byte aligned
+	#pragma pack(push, 1)
+
+
+	// ****************************************
+
+	// ------
+	// Header
+	// ------
+
+	struct PacketHeader
+	{
+		int sourcePlayerNetID;
+		int destPlayerNetID;
+		unsigned char sizeOfPayload;
+		unsigned char type;
+		int checksum;
+	};
+
+
+
+	// ************************
+	// Transport Layer messages
+	// ************************
+
+	enum TransportLayerCommandType
+	{
+		tlcJoinRequest = 0,
+		tlcJoinGranted = 1,
+		tlcJoinRefused = 2,
+		tlcStartGame = 3,
+		tlcSetPlayersList = 4,
+		tlcSetPlayersListFailed = 5,
+		tlcUpdateStatus = 6,
+		tlcHostedGameSearchQuery = 7,
+		tlcHostedGameSearchReply = 8,
+		tlcGameServerPoke = 9,
+	};
+
+
+	// ****************************************
+
+	// ---------------
+	// Payload formats
+	// ---------------
+
+	// [Nested structure]
+	struct NetPeerInfo
+	{
+		int ip;
+		short port;
+		short status;
+		int playerNetID;
+	};
+
+	struct TransportLayerHeader
+	{
+		TransportLayerCommandType commandType;
+	};
+
+	struct JoinRequest : public TransportLayerHeader
+	{
+		GUID sessionIdentifier;
+		int returnPortNum;			// [47800-47807]
+		char password[12];
+	};
+
+	struct JoinReply : public TransportLayerHeader
+	{
+		GUID sessionIdentifier;
+		int newPlayerNetID;
+	};
+
+	struct JoinReturned : public TransportLayerHeader
+	{
+		int newPlayerNetID;
+		int unused1;
+		int unused2;
+		int unused3;
+	};
+
+	struct PlayersList : public TransportLayerHeader
+	{
+		int numPlayers;
+		NetPeerInfo netPeerInfo[6];
+	};
+
+	struct StatusUpdate : public TransportLayerHeader
+	{
+		short newStatus;
+	};
+
+
+
+	// ****************************************
+
+	// ---------------------
+	// Custom Packet formats
+	// ---------------------
+
+	// [Nested structure]
+	struct CreateGameInfo
+	{
+		StartupFlags startupFlags;
+		char gameCreatorName[15];
+	};
+
+	struct HostedGameSearchQuery : public TransportLayerHeader
+	{
+		GUID gameIdentifier;
+		unsigned int timeStamp;
+		char password[12];
+	};
+
+	struct HostedGameSearchReply : public TransportLayerHeader
+	{
+		GUID gameIdentifier;
+		unsigned int timeStamp;
+		GUID sessionIdentifier;
+		CreateGameInfo createGameInfo;
+		sockaddr_in hostAddress;
+	};
+
+
+	enum PokeStatusCode
+	{
+		pscGameHosted = 0,
+		pscGameStarted = 1,
+		pscGameCancelled = 2,
+		pscGameDropped = 3,
+	};
+
+	struct GameServerPoke : public TransportLayerHeader
+	{
+		int statusCode;
+		int randValue;
+	};
+
+
+	// ****************************************
+
+	union TransportLayerMessage
+	{
+		// Header only
+		TransportLayerHeader tlHeader;
+
+		// Standard messages
+		JoinRequest joinRequest;
+		JoinReply joinReply;
+		JoinReturned joinReturned;
+		PlayersList playersList;
+		StatusUpdate statusUpdate;
+
+		// Custom messages
+		HostedGameSearchQuery searchQuery;
+		HostedGameSearchReply searchReply;
+		GameServerPoke gameServerPoke;
+	};
+
+
+	// ****************************************
+
+	// *************
+	// Game Messages
+	// *************
+
+	struct GameMessageHeader
+	{
+	};
+
+
+	union GameMessage
+	{
+		// Header only
+		GameMessageHeader gmHeader;
+
+		// Standard messages
+	};
+
+
+	// ****************************************
+
+	// ------
+	// Packet
+	// ------
+
+	class Packet
+	{
+	public:
+		// Member variables
+		PacketHeader header;
+		union
+		{
+			char payloadData[0x212];
+			TransportLayerMessage tlMessage;
+			GameMessage gameMessage;
+		};
+
+	public:
+		// Member functions
+		int Checksum();
+	};
+
+
+
+	// Restore old alignment setting
+	#pragma pack(pop)
+
+}	// End namespace
+
+
+#endif
