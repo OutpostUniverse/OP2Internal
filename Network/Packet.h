@@ -50,6 +50,7 @@ namespace OP2ForcedExport
 		tlcHostedGameSearchQuery = 7,
 		tlcHostedGameSearchReply = 8,
 		tlcGameServerPoke = 9,
+		tlcJoinHelpRequest = 10,
 	};
 
 
@@ -151,6 +152,14 @@ namespace OP2ForcedExport
 		int randValue;
 	};
 
+	struct JoinHelpRequest : public TransportLayerHeader
+	{
+		GUID sessionIdentifier;
+		int returnPortNum;			// [47800-47807]
+		char password[12];
+		sockaddr_in clientAddr;
+	};
+
 
 	// ****************************************
 
@@ -170,6 +179,7 @@ namespace OP2ForcedExport
 		HostedGameSearchQuery searchQuery;
 		HostedGameSearchReply searchReply;
 		GameServerPoke gameServerPoke;
+		JoinHelpRequest joinHelpRequest;
 	};
 
 
