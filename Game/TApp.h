@@ -54,7 +54,7 @@ namespace OP2ForcedExport
 		char string[260];				// 0x5C ** [MAX_PATH length?]
 		int cursorWaitCount;			// 0x160
 		HCURSOR hOldCursor;				// 0x164 [BeginWaitCursor()/EndWaitCursor()]
-		int b4;							// 0x168 **
+		int b4;							// 0x168 **  [(DrawScanline8Pal16MMX*)(BitmapCopyInfo* bitmapCopyInfo)]
 		int bGameInitialized;			// 0x16C
 		int bIsDrawing;					// 0x170
 		int fActive;					// 0x174 [BOOL]
