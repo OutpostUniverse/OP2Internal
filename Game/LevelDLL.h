@@ -17,6 +17,12 @@ namespace OP2ForcedExport
 		int bufferSize;
 	};
 
+	struct DefaultGroupInfo
+	{
+		int defaultGroupIndex;		// ScStubIndex
+		int flag;					// ** Unknown  -1 = Not Set, 0 = Set
+	};
+
 
 	class LevelDLL
 	{
@@ -41,8 +47,9 @@ namespace OP2ForcedExport
 		void (__cdecl *AIProc)();			// 0x8
 		int  (__cdecl *StatusProc)();		// 0xC
 		BufferInfo saveRegions;				// 0x10
-		int unknown;						// 0x18 **
-		char unknown2[0x30];				// 0x1C **
+		int unknown;						// 0x18 ** char* dllName
+		DefaultGroupInfo defaultGroup[6];	// 0x1C Default ScStub:ScGroup for each Player
+		// ** AIModDesc* descBlock
 	};
 
 }	// End namespace

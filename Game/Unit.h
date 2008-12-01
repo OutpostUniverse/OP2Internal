@@ -18,22 +18,22 @@ namespace OP2ForcedExport
 		virtual UnitTypeInfo* GetUnitTypeInfo();
 		virtual void ProcessForGameCycle();
 		virtual void ProcessTimers();
-		virtual int CheckExplode();
-		virtual int FireWeapon();
+		virtual int  CheckExplode();
+		virtual int  FireWeapon();
 		virtual void GetTurretAnimationIndex(Unit* chasisUnit, int rotationIndex);
 		virtual void Draw(Viewport* viewport);
 		virtual void LightUpVisibleRange(Viewport* viewport);
 		virtual void MarkBackgroundRectToRedraw(Viewport* viewport);
-		virtual int IsSightRangeVisible(Viewport* viewport);
-		virtual int IsSightRangeVisibleY(Viewport* viewport);
-		virtual int GetAnimationIndex();
+		virtual int  IsSightRangeVisible(Viewport* viewport);
+		virtual int  IsSightRangeVisibleY(Viewport* viewport);
+		virtual int  GetAnimationIndex();
 		virtual void GetSelectionBoxSize(int* width, int* height);
 		virtual void GetSelectionBoxPos(int* xOffset, int* yOffset);
-		virtual int MouseOver(int xOffset, int yOffset);				// Relative to bounding box
+		virtual int  MouseOver(int xOffset, int yOffset);				// Relative to bounding box
 		virtual void GetRolloverText(char* destBuffer, int bufferSize);
-		virtual int GetSelectedUnitDisplayString(char* destBuffer, int bufferSize);		// Returns string length
-		virtual int IsMouseCursorOverSelectionBox(int pixelX, int pixelY);
-		virtual int F2();					// ** [Return 2]
+		virtual int  GetSelectedUnitDisplayString(char* destBuffer, int bufferSize);		// Returns string length
+		virtual int  IsMouseCursorOverSelectionBox(int pixelX, int pixelY);
+		virtual int  F2();					// ** [Return 2]
 		virtual ~Unit();					// Destructor(int flags)  [Scalar-deleting: 0]
 		virtual void DoEvent();				// Meteor impact, Dock damage, etc.
 		virtual void OnLoadTranslateData();	// Translate unit saved game format into memory format (also called when saving to untranslate after writing the file)
@@ -43,8 +43,8 @@ namespace OP2ForcedExport
 		virtual void Move();
 		virtual void TransferUnit(int destPlayerNum);
 		virtual void GetLocation(int tileX1, int tileY1, int* tileX2, int* tileY2);
-		virtual int F3(int a1, int a2);		// ** BSuccess?  [Used by SCAT]
-		virtual int IsLive();
+		virtual int  F3(int a1, int a2);		// ** BSuccess?  [Used by SCAT]
+		virtual int  IsLive();
 		// ----
 
 	public:

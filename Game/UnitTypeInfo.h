@@ -34,11 +34,11 @@ namespace OP2ForcedExport
 		// Virtual member functions
 		virtual Unit* CreateUnit(int pixelX, int pixelY, int unitIndex);	// 0x0
 		virtual char* GetUnitPropTag();				// 0x4 
-		virtual int Save(StreamIO* savedGameFile);	// 0x8 BSuccess
-		virtual int Load(StreamIO* savedGameFile);	// 0xC BSuccess
-		virtual int Initialize();					// 0x10 BSuccess **
+		virtual int  Save(StreamIO* savedGameFile);	// 0x8 BSuccess
+		virtual int  Load(StreamIO* savedGameFile);	// 0xC BSuccess
+		virtual int  Initialize();					// 0x10 BSuccess **
 		virtual void F1(Unit* chasisUnit);			// 0x14 **
-		virtual int F2(int a1, int a2);				// 0x18 **
+		virtual int  F2(int a1, int a2);			// 0x18 **
 
 	public:
 		// Member variables
