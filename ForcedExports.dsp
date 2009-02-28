@@ -563,6 +563,10 @@ SOURCE=.\UserInterface\UIElement\UIElementListBox.h
 # End Group
 # Begin Source File
 
+SOURCE=.\DummyMain.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\ForcedExports.asm
 # Begin Custom Build
 IntDir=.\Release

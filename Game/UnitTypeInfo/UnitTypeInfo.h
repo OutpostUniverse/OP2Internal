@@ -38,7 +38,7 @@ namespace OP2ForcedExport
 		int buildTime;						// 0x14		// buildPoints
 		int sightRange;						// 0x18
 		unsigned char numUnitsOfType;		// 0x1C **
-		int bImproved						// 0x1D
+		int bImproved;						// 0x1D
 		char padding[3];					// 0x20 **
 		int moveSpeed;						// 0x24		// Vehicle: moveSpeed			// Building: powerRequired
 		int turnRate;						// 0x28		// Vehicle: turnRate			// Building: workersRequired	// Weapon: concussionDamage

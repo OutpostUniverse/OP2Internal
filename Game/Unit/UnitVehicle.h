@@ -38,7 +38,7 @@ namespace OP2ForcedExport
 		// ----  [Overridden base class functions]
 		// ... **TODO**
 		// ----  [New virtual functions]
-		virtual void SetCargo(Truck_Cargo truckCargo, int cargoAmountOrTechID, short a2);	// 0x94 **
+		virtual void SetCargo(enum Truck_Cargo truckCargo, int cargoAmountOrTechID, short a2);	// 0x94 **
 		virtual void F9();							// 0x98 **
 		// ----
 	};
