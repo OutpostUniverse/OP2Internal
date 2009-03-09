@@ -45,7 +45,7 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LIB32=link.exe -lib
 # ADD BASE LIB32 /nologo
-# ADD LIB32 /nologo /out:"..\ForcedExports.lib"
+# ADD LIB32 /nologo /out:"Lib/ForcedExports.lib"
 # Begin Target
 
 # Name "ForcedExports - Win32 Release"
