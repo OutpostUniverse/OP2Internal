@@ -12,6 +12,9 @@
 #define ForcedExports_H
 
 
+// Add reference to the import library
+#pragma comment(lib, "../../API/ForcedExports/Lib/ForcedExports")
+
 
 // Used for sanity checking in DLLMain
 extern "C" void* desiredLoadAddress;
