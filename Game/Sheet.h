@@ -175,7 +175,7 @@ namespace OP2ForcedExport
 
 
 	// Globals
-	extern Sheet &sheet = *(Sheet*)0x0055B780;		// 0x0055B780
+	extern Sheet &sheet;// = *(Sheet*)0x0055B780;		// 0x0055B780
 
 }	// End namespace
 
