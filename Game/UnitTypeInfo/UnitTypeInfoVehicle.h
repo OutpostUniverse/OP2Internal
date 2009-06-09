@@ -9,12 +9,12 @@
 
 namespace OP2ForcedExport
 {
-
+/*
 	class VehicleUnitTypeInfo : public UnitTypeInfo
 	{
 	public:
 		int b1[145];						// **
-		int edenAnimationIndex[16];			// [directionIndex]
+		int edenAnimationIndex[16];			// 0x248? [directionIndex]
 		int b2[48];							// **
 		int plymouthAnimationIndex[16];		// [directionIndex]
 
@@ -23,7 +23,7 @@ namespace OP2ForcedExport
 		int trackType;						// 0x1E8
 		// ...?
 	};
-
+*/
 }	// End namespace
 
 

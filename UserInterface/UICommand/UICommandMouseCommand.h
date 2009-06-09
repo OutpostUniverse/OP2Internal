@@ -11,7 +11,7 @@
 namespace OP2ForcedExport
 {
 
-	class Unit;
+	class Vehicle;
 
 
 	class MouseCommand : public UICommand
@@ -25,7 +25,7 @@ namespace OP2ForcedExport
 		// Virtual member functions
 		virtual void OnClick();									// 0x455C50 Left-Click Detail Pane event
 		virtual int  GetMouseCursor(int pixelX, int pixelY, HCURSOR* mouseCursor);	// 0x455C60
-		virtual int  GetBuildCursor(int startPixelX, int startPixelY, int endPixelX, int endPixelY, HCURSOR* mouseCursor, int highLight[], Unit* constructionVehicle);	// 0x455C70
+		virtual int  GetBuildCursor(int startPixelX, int startPixelY, int endPixelX, int endPixelY, HCURSOR* mouseCursor, int highLight[], Vehicle* constructionVehicle);	// 0x455C70
 		virtual void OnCancel();								// 0x4512B0 Right-click or ESC event
 		virtual void OnChangeCommand();							// 0x4512D0
 		virtual int  IsDefaultCommand(int pixelX, int pixelY);	// 0x455C80

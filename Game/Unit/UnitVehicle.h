@@ -25,6 +25,9 @@ namespace OP2ForcedExport
 		virtual int CanMove(int tileX, int tileY);	// 0x90 int bCanMove  [Check celltype against track type, and if units can be bumped out of the way]
 		// ----
 
+		// Member functions
+		void SetCurrentUnitAndTrackTypeAndAttackType();	// 0x438360
+
 	public:
 		// Member variables
 		// ----

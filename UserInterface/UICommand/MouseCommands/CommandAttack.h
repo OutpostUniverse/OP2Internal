@@ -20,7 +20,7 @@ namespace OP2ForcedExport
 		// [MouseCommand] virtual member functions
 		virtual void OnClick();								// 0x453250
 		virtual int GetMouseCursor(int pixelX, int pixelY, HCURSOR* mouseCursor);	// 0x453480
-		// virtual int GetBuildCursor(int startPixelX, int startPixelY, int endPixelX, int endPixelY, HCURSOR* mouseCursor, int highLight[], Unit* constructionVehicle);	// 0x455C70
+		// virtual int GetBuildCursor(int startPixelX, int startPixelY, int endPixelX, int endPixelY, HCURSOR* mouseCursor, int highLight[], Vehicle* constructionVehicle);	// 0x455C70
 		// virtual void OnCancel();							// 0x4512B0
 		// virtual void OnChangeCommand();					// 0x4512D0
 		virtual int F1(int pixelX, int pixelY);				// 0x453510 **

@@ -574,7 +574,7 @@ InputPath=.\ForcedExports.asm
 InputName=ForcedExports
 
 "$(IntDir)\$(InputName).obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
-	NASMw -f win32 -o "$(IntDir)\$(InputName).obj" "$(InputPath)"
+	NASM -f win32 -o "$(IntDir)\$(InputName).obj" "$(InputPath)"
 
 # End Custom Build
 # End Source File

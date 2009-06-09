@@ -12,7 +12,7 @@
 ; You must set the following to the load address of the DLL
 ; to ensure proper linking to the functions in Outpost2.exe
 ; *********************
-LoadAddr EQU 0x14020000
+LoadAddr EQU 0x14040000
 ; *********************
 
 
@@ -76,6 +76,16 @@ Export 0x00475930, ?scr_snprintf@OP2ForcedExport@@YAHPADIPBDZZ
 ; **************
 ; User Interface
 ; **************
+
+
+; GFXClippedSurface
+; -----------------
+; Member functions
+Export 0x0041EFF0, ?DrawLine@GFXClippedSurface@OP2ForcedExport@@QAEXAAUPoint@2@0H@Z
+; Global functions
+Export 0x0040B2F0, ?DrawBorder@OP2ForcedExport@@YIXAAVGFXClippedSurface@1@AAURect@1@FFH@Z
+Export 0x0040B4D0, ?DrawBox@OP2ForcedExport@@YIXPAVGFXClippedSurface@1@PAURect@1@F@Z
+Export 0x0045C3A0, ?DrawHpBar@OP2ForcedExport@@YIXPAURect@1@PAVGFXClippedSurface@1@HHFFHFHF@Z
 
 
 ; IWnd
@@ -286,6 +296,18 @@ ExportVirt 0x00459F70, ?GetSelectedReportButtonIndex@CommandPaneView@OP2ForcedEx
 
 
 
+; UICommand:MouseCommand
+; ----------------------
+ExportVirt 0x00455C50, ?OnClick@MouseCommand@OP2ForcedExport@@UAEXXZ
+ExportVirt 0x00455C60, ?GetMouseCursor@MouseCommand@OP2ForcedExport@@UAEHHHPAPAUHICON__@@@Z
+ExportVirt 0x00455C70, ?GetBuildCursor@MouseCommand@OP2ForcedExport@@UAEHHHHHPAPAUHICON__@@QAHPAVVehicle@2@@Z
+ExportVirt 0x004512B0, ?OnCancel@MouseCommand@OP2ForcedExport@@UAEXXZ
+ExportVirt 0x004512D0, ?OnChangeCommand@MouseCommand@OP2ForcedExport@@UAEXXZ
+ExportVirt 0x00455C80, ?IsDefaultCommand@MouseCommand@OP2ForcedExport@@UAEHHH@Z
+ExportVirt 0x00455C90, ?GetCursor@MouseCommand@OP2ForcedExport@@UAEPAUHICON__@@HH@Z
+
+
+
 ; Filter
 ; ------
 ; Virtual member functions
@@ -301,6 +323,8 @@ Export 0x00483CB0, ??0Filter@OP2ForcedExport@@QAE@XZ
 ; Virtual member functions
 ; Other Member functions
 Export 0x0041B670, ?SetMouseCommand@MouseCommandFilter@OP2ForcedExport@@QAEXW4BehaviorType@2@PAVMouseCommand@2@HHH@Z
+Export 0x0041B6D0, ?SetOverlaySize@MouseCommandFilter@OP2ForcedExport@@QAEXHH@Z
+Export 0x0041B6F0, ?GetHighlightRect@MouseCommandFilter@OP2ForcedExport@@QAEXPAURect@2@@Z
 
 
 ; Filter:HoyKeyFilter
@@ -374,6 +398,16 @@ Export 0x00478710, ?AddMessage@TethysGame@OP2ForcedExport@@SIXHHPBDHH@Z
 
 
 
+; Map
+; ---
+; Member functions
+; Global functions
+Export 0x00438C80, ?IsBuildable@OP2ForcedExport@@YIHHH@Z
+Export 0x004383C0, ?IsTilePassable@OP2ForcedExport@@YIHHH@Z
+Export 0x00438B70, ?IsDockLocation@OP2ForcedExport@@YIHHH@Z
+
+
+
 ; Player
 ; ------
 ; Member functions
@@ -385,7 +419,14 @@ Export 0x0040E300, ?ProcessCommandPacket@Player@OP2ForcedExport@@QAEXPAUCommandP
 ; Sheet
 ; -----
 ; Member functions
-Export 0x004467C0, ?CreateUnit@Sheet@OP2ForcedExport@@QAEPAVUnit@2@W4map_id@2@HHH0H_N@Z
+Export 0x004467C0, ?CreateUnit@Sheet@OP2ForcedExport@@QAEPAVUnit@2@W4map_id@2@HHH0HH@Z
+
+
+
+; Unit
+; ----
+; Member functions
+Export 0x00438360, ?SetCurrentUnitAndTrackTypeAndAttackType@Vehicle@OP2ForcedExport@@QAEXXZ
 
 
 
@@ -479,11 +520,12 @@ ExportData 0x00547090, ?config@OP2ForcedExport@@3VCConfig@1@A
 ExportData 0x0056E868, ?app@OP2ForcedExport@@3VTApp@1@A
 ExportData 0x0056EA98, ?tethysGame@OP2ForcedExport@@3VTethysGame@1@A
 ExportData 0x0054F7F8, ?map@OP2ForcedExport@@3VMap@1@A
-ExportData 0x0055B780, ?sheet@OP2ForcedExport@@3VSheet@1@A
+ExportData 0x0055B780, ?sheet@OP2ForcedExport@@3AAVSheet@1@A
 ExportData 0x0056C230, ?research@OP2ForcedExport@@3VResearch@1@A
 ExportData 0x0056BE20, ?randNumGen@OP2ForcedExport@@3VRandomNumberGenerator@1@A
 ExportData 0x00574428, ?thorsNumGen@OP2ForcedExport@@3VRandomNumberGenerator@1@A
 ExportData 0x004E1348, ?unitTypeInfo@OP2ForcedExport@@3PAPAVUnitTypeInfo@1@A
+ExportData 0x004DEBA8, ?cellTypeInfo@OP2ForcedExport@@3PAUCellTypeInfo@1@A
 
 
 ; Network

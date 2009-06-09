@@ -9,7 +9,7 @@
 
 namespace OP2ForcedExport
 {
-
+/*
 	class WeaponUnitTypeInfo : public UnitTypeInfo
 	{
 	public:
@@ -38,7 +38,7 @@ namespace OP2ForcedExport
 		int hitSoundIndex;						// 0x258
 		// ...?
 	};
-
+*/
 }	// End namespace
 
 

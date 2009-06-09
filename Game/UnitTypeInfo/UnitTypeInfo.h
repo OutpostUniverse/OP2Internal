@@ -27,38 +27,17 @@ namespace OP2ForcedExport
 		// ----
 	};
 
-	#pragma pack(push, 1)
-	struct PlayerUnitInfo
-	{
-		int hitPoints;						// 0x0
-		int b1;								// 0x4 **
-		int armor;							// 0x8 **
-		int commonOreCost;					// 0xC
-		int rareOreCost;					// 0x10
-		int buildTime;						// 0x14		// buildPoints
-		int sightRange;						// 0x18
-		unsigned char numUnitsOfType;		// 0x1C **
-		int bImproved;						// 0x1D
-		char padding[3];					// 0x20 **
-		int moveSpeed;						// 0x24		// Vehicle: moveSpeed			// Building: powerRequired
-		int turnRate;						// 0x28		// Vehicle: turnRate			// Building: workersRequired	// Weapon: concussionDamage
-		int producationRate;				// 0x2C		// Vehicle: productionRate		// Building: scientistsRequired // Weapon: penetrationDamage
-		int reloadTime;						// 0x30		// Building: storageCapacity	// Weapon: reloadTime
-		int productionCapacity;				// 0x34		// Building: productionCapacity  (powerProduction)
-		int storageBays;					// 0x38
-		int completedUpgradeTechNumList[2];	// 0x3C
-	};
-	/*
-	struct	// Vehicle
+
+	struct VehicleInfo
 	{
 		int moveSpeed;			// 0x24
 		int turnRate;			// 0x28
 		int productionRate;		// 0x2C
 		int reloadTime;			// 0x30 **
+		// 0x34 **
+		// 0x38 **
 	};
-	*/
-	/*
-	struct	// Building
+	struct BuildingInfo
 	{
 		int powerRequired;		// 0x24
 		int workersRequired;	// 0x28
@@ -67,17 +46,41 @@ namespace OP2ForcedExport
 		int productionCapacity;	// 0x34
 		int storageBays;		// 0x38
 	};
-	*/
-	/*
-	struct	// Weapon
+	struct WeaponInfo
 	{
-		int moveSpeed			// 0x24 **
+		int moveSpeed;			// 0x24 **
 		int concussionDamage;	// 0x28
 		int penetrationDamage;	// 0x2C
 		int reloadTime;			// 0x30
+		// 0x34 **
+		// 0x38 **
 	};
-	*/
+	struct PlayerUnitInfo
+	{
+	#pragma pack(push, 1)
+		struct
+		{
+			int hitPoints;						// 0x0
+			int b1;								// 0x4 **
+			int armor;							// 0x8 **
+			int commonOreCost;					// 0xC
+			int rareOreCost;					// 0x10
+			int buildTime;						// 0x14		// buildPoints
+			int sightRange;						// 0x18
+			unsigned char numUnitsOfType;		// 0x1C **
+			int bImproved;						// 0x1D
+			char padding[3];					// 0x20 **
+		};
 	#pragma pack(pop)
+		// ----
+		union
+		{
+			VehicleInfo vehicleInfo;		// 0x24
+			BuildingInfo buildingInfo;		// 0x24
+			WeaponInfo weaponInfo;			// 0x24
+		};
+		int completedUpgradeTechNumList[2];	// 0x3C
+	};
 
 
 	class UnitTypeInfo
@@ -98,6 +101,9 @@ namespace OP2ForcedExport
 		// ----
 		// vtbl								// 0x0
 		map_id unitType;					// 0x4
+		PlayerUnitInfo playerInfo[7];		// 0x8
+		int requiredTechIndex;				// 0x1E4
+		int trackType;						// 0x1E8
 		// ...?
 		// 0x1F0
 		// 0x1F4

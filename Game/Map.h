@@ -25,6 +25,21 @@ namespace OP2ForcedExport
 	};
 
 
+	struct CellTypeInfo
+	{
+		char* name;
+		int trackSpeed[8];
+	};
+
+
+	enum CellType
+	{
+		CellTypeNormalWall = 0x17,
+		CellTypeMicrobeWall = 0x18,
+		CellTypeLavaWall = 0x19,
+	};
+
+
 	class Map
 	{
 	public:
@@ -49,20 +64,28 @@ namespace OP2ForcedExport
 		int nextFreeUnitSlotIndex;	// 0x44
 		int firstFreeUnitSlotIndex;	// 0x48
 		Unit** freeUnitList;		// 0x4C Unit*[]*
-		Unit* unitArray;			// 0x50 Unit[1025]*
+		Unit* unit;					// 0x50 Unit[1025]*
 		Unit* unknown2;				// 0x54 **
 		int unknown3;				// 0x58 **
 		char lightLevelBrightnessAdjustment[4];	// 0x5C ** Find actual size
-		// ...
-		// 0x460 WellString[]*
-		// 0x464 int[]* tileData
+		char unknown4[0x400];		// 0x60 **
+
+		char** wellString;			// 0x460 WellString[]*
+		TileData* tileData;			// 0x464 int[]* tileData
 		// 0x468 tileMappings[]* (numTileSets elements)
 		// 0x46C terrainTypeManager* (holds terrainType objects - 0x108 byte objects)
 	};
 
 
+	// Global functions
+	int __fastcall IsBuildable(int tileX, int tileY);		// 0x438C80  Note: First call Unit:Vehicle.SetCurrentUnitAndTrackTypeAndAttackType()
+	int __fastcall IsTilePassable(int tileX, int tileY);	// 0x4383C0  Note: First call Unit:Vehicle.SetCurrentUnitAndTrackTypeAndAttackType()
+	int __fastcall IsDockLocation(int tileX, int tileY);	// 0x438B70  Note: Checks (tileX - 1, tileY) and (tileX, tileY - 1) for a building with a dock at the given location
+
+
 	// Globals
 	extern Map map;		// 0x54F7F8
+	extern CellTypeInfo cellTypeInfo[32];	// 0x4DEBA8
 
 }	// End namespace
 

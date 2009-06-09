@@ -34,6 +34,8 @@ namespace OP2ForcedExport
 
 		// Member functions
 		void SetMouseCommand(BehaviorType behaviorType, MouseCommand* mouseCommand, int maxNumWaypoints, int a3, int a4);	// 0x41B670
+		void SetOverlaySize(int pixelX, int pixelY);	// 0x41B6D0
+		void GetHighlightRect(Rect* highlightRect);		// 0x41B6F0
 
 	public:
 		// Member variables

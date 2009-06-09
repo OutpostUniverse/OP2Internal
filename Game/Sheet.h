@@ -16,7 +16,7 @@ namespace OP2ForcedExport
 	{
 	public:
 		// Member functions
-		Unit* CreateUnit(map_id unitType, int pixelX, int pixelY, int creatorIndex, map_id cargo, int unitIndex, bool bCenterInTile);	// 0x004467C0  Returns 0 (NULL) when out of unit records
+		Unit* CreateUnit(map_id unitType, int pixelX, int pixelY, int creatorIndex, map_id cargo, int unitIndex, int bCenterInTile);	// 0x004467C0  Returns 0 (NULL) when out of unit records
 
 	public:
 		// Member variables
