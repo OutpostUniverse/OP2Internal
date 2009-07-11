@@ -10,6 +10,41 @@
 namespace OP2ForcedExport
 {
 
+	class Font;
+
+	// Max Size: 256  [Array indexing]
+	struct ListItem
+	{
+		int listItemIndex;			// 0x0  [dataListIndex?]
+		char text[120];				// 0x4  [char[120?]]
+		//RenderData<?> renderData;	// 0x7C
+	};
+
+	class ListData
+	{
+	public:
+		virtual int GetSize();
+		virtual int GetFirstIndex();				// [-1 = List Empty]
+		virtual int GetNextIndex(int dataIndex);	// [-1 = Past Last]
+		virtual int GetPrevIndex(int index);		// [-1 = Before First]
+		virtual int GetCurrentIndex(int index);		// ** Maybe? Return different index type?
+		virtual int GetDisplayString(int index, char* string, int stringLength);
+		virtual int GetStatusString(int index, char* string, int stringLength);
+	public:
+		// ...?
+	};
+
+	struct ListStyle
+	{
+		ListData* listData;			// 0x0
+		Font* font;					// 0x4
+		int selectedBorderWidth;	// 0x8
+		short a1Color16;			// 0xC **
+		short backColor16;			// 0xE
+		int a2;						// 0x10 **
+	};
+
+
 	class ListBox : public UIElement
 	{
 	public:
@@ -23,6 +58,8 @@ namespace OP2ForcedExport
 		// virtual void InvalidateRect(IWnd* wnd);
 
 		// Virtual member functions
+		virtual void OnUpdateSelection();
+		virtual void OnClick();
 		// virtual ...
 
 		// Non virtual member functions
@@ -36,22 +73,26 @@ namespace OP2ForcedExport
 		// vtbl						// 0x0
 		// int flags;				// 0x4
 		// Rect position;			// 0x8
-		// -------------
-		// int // 0x18
-		// int // 0x1C
-		// int // 0x20
-		// int // 0x24
-		// void* listMem;			// 0x28
-		// int // 0x2C
-		// int // 0x30
-		// short // 0x34
-		// short // 0x36
-		// int // 0x38
-		// int ??? // 0x3C
-		// int?[5]/struct // 0x44
-		 // void* // 0x48
-		 // int // 0x4C
-		 // short // 0x52
+		// -------------		[** Some fields are list indexes, and others are data indexes **]
+		// int numLinesVisible;		// 0x18 Total display area (**rounded up for partial lines?, or borders are padded and always integral height?)
+		// int lineHeight;			// 0x1C Size of a single line
+		// int numLinesDisplayed;	// 0x20 Sum of lines of all items at least partially visible
+		// int numItems?;			// 0x24 *
+		// void* listItem;			// 0x28 [ListItem[]*]
+		// int scrollTopIndex;		// 0x2C [-1 = None, don't display list] [listIndex]
+		// int maxIndex;			// 0x30 ** Totally wrong? numItemsDisplayed?+1 [listIndex] bottomIndex?
+		// short a1;				// 0x34 *
+		// short a2;				// 0x36 *
+		// int currentIndex;		// 0x38
+		// int lastClickTime;		// 0x3C [milliseconds]
+		// int lastClickedOnIndex;	// 0x40 [Used to check if second of a double click is on same item]
+		// ListStyle listStyle;		// 0x44 *
+		//  ListData* listData;		// 0x44 [Object pointer, object has vtbl]
+		//  Font* font;				// 0x48
+		//  int selectedBorderWidth;// 0x4C [2]
+		//  short a3;				// 0x50 *
+		//  short backColor16;		// 0x52
+		//  int a4;					// 0x54 *
 		// ...? 0x58?
 	};
 

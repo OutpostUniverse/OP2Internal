@@ -30,6 +30,7 @@ namespace OP2ForcedExport
 		// ----
 
 	public:
+		//char* weaponName;		// 0x1F8 ???
 		// ...
 		int weaponBlastPixelRadius;				// 0x248
 		int b1;									// 0x24C **

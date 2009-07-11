@@ -352,6 +352,10 @@ SOURCE=.\ResourceManagement\TextStreamParser.h
 # PROP Default_Filter ""
 # Begin Source File
 
+SOURCE=.\UserInterface\CommandPaneView\ReportViews\FactoryReportView.h
+# End Source File
+# Begin Source File
+
 SOURCE=.\UserInterface\CommandPaneView\ReportViews\LabReportView.h
 # End Source File
 # End Group
