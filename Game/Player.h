@@ -127,7 +127,7 @@ namespace OP2ForcedExport
 		PackedUnitGroup unitGroup[11];		// 0x1F0
 		char padding;						// 0x4BB **
 		int playerNetID;					// 0x4BC
-		MachineSettings machineSettings;	// 0x4C0
+		CP::MachineSettings machineSettings;	// 0x4C0
 		CommandPacket cp[16];				// 0x4C8
 		int unitIndex[16];					// 0xBD8 ** [Set when processing single unit CPs]
 
