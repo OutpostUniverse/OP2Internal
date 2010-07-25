@@ -47,10 +47,13 @@ namespace OP2ForcedExport
 		tlcSetPlayersList = 4,
 		tlcSetPlayersListFailed = 5,
 		tlcUpdateStatus = 6,
+		// Custom message types
 		tlcHostedGameSearchQuery = 7,
 		tlcHostedGameSearchReply = 8,
 		tlcGameServerPoke = 9,
 		tlcJoinHelpRequest = 10,
+		tlcRequestExternalAddress = 11,
+		tlcEchoExternalAddress = 12,
 	};
 
 
@@ -160,6 +163,16 @@ namespace OP2ForcedExport
 		sockaddr_in clientAddr;
 	};
 
+	struct RequestExternalAddress : public TransportLayerHeader
+	{
+		unsigned short internalPort;
+	};
+
+	struct EchoExternalAddress : public TransportLayerHeader
+	{
+		unsigned short replyPort;
+		sockaddr_in addr;
+	};
 
 	// ****************************************
 
@@ -180,6 +193,8 @@ namespace OP2ForcedExport
 		HostedGameSearchReply searchReply;
 		GameServerPoke gameServerPoke;
 		JoinHelpRequest joinHelpRequest;
+		RequestExternalAddress requestExternalAddress;
+		EchoExternalAddress echoExternalAddress;
 	};
 
 
