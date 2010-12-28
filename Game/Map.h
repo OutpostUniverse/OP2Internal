@@ -28,6 +28,8 @@ namespace OP2ForcedExport
 	struct CellTypeInfo
 	{
 		char* name;
+		// Track types are: Legged, Wheeled, Miner, Tracked, Hover, Lava?, Blight?, Unknown?
+		// See HFL: enum TrackType
 		int trackSpeed[8];
 	};
 
