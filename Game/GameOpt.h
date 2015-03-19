@@ -23,7 +23,7 @@ namespace OP2ForcedExport
 		
 		// Placeholder Cheats  [switched through to specified Player]
 		GameOptSetCommonOre				= 8,	// 0x8
-		GameOptSetRarePre				= 9,	// 0x9
+		GameOptSetRareOre				= 9,	// 0x9
 		GameOptSetScientists			= 10,	// 0xA
 		GameOptSetWorkers				= 11,	// 0xB
 		GameOptSetFoodStored			= 12,	// 0xC
