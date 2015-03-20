@@ -123,6 +123,9 @@ extern "C" void* desiredLoadAddress;
 #include "Game\Map.h"
 #include "Game\LevelDLL.h"
 #include "Game\Sheet.h"
+#include "Game\Research.h"
+#include "Game\RandomNumberGenerator.h"
+
 #include "Game\Unit\Unit.h"
 #include "Game\Unit\UnitVehicle.h"
 #include "Game\Unit\UnitBuilding.h"
@@ -131,9 +134,13 @@ extern "C" void* desiredLoadAddress;
 #include "Game\UnitTypeInfo\UnitTypeInfoVehicle.h"
 #include "Game\UnitTypeInfo\UnitTypeInfoBuilding.h"
 #include "Game\UnitTypeInfo\UnitTypeInfoWeapon.h"
-#include "Game\Research.h"
-#include "Game\RandomNumberGenerator.h"
 
+#include "Game\ScStub\ScStubCreator.h"
+#include "Game\ScStub\ScStub.h"
+#include "Game\ScStub\ScStubGroup.h"
+#include "Game\ScStub\ScStubGroupCombatBase.h"
+#include "Game\ScStub\ScStubGroupMineGroup.h"
+#include "Game\ScStub\ScStubGroupBuildGroup.h"
 
 
 namespace OP2ForcedExport
