@@ -56,7 +56,7 @@ namespace OP2ForcedExport
 
 
 	// Global functions
-	__fastcall MsgBox(HWND hOwnerWnd, const char* message, const char* title, int flags);	// 0x0041E0E0
+	int __fastcall MsgBox(HWND hOwnerWnd, const char* message, const char* title, int flags);	// 0x0041E0E0
 
 }	// End namespace
 
