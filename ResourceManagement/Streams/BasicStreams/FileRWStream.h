@@ -30,7 +30,7 @@ namespace OP2ForcedExport
 		// Constructor/Destructor
 		FileRWStream();										// 0x4B0CE0
 		FileRWStream(HANDLE hFile);							// 0x4B0D30
-		FileRWSteram(char* fileName);						// 0x4B0D70
+		FileRWStream(char* fileName);						// 0x4B0D70
 		~FileRWStream();									// 0x4B0DA0
 
 		// Member functions
