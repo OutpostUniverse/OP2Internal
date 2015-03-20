@@ -66,10 +66,13 @@ namespace OP2ForcedExport
 		char executingAction;			// 0x23 
 		short cargo;					// 0x24 [enum map_id]
 		short attackingUnitIndex;		// 0x26 
-		int b1;							// 0x28 **
+		int lastAttackedTick;			// 0x28 (Valid when (gameTick - lastAttackedTick) < 30)
 		short unitTypeInstanceNum;		// 0x2C
 		short reloadTimer;				// 0x2E
-		int b2;							// 0x30 **
+		char groupScStubIndex;			// 0x30 (Set when added to a group)
+		char groupUnitNodeIndex;		// 0x31 (Set when added to a group)
+		char b1;						// 0x32 **
+		char b2;						// 0x33 **
 		int* b3;						// 0x34 ** WaypointStruct?
 		int b4;							// 0x38 **
 		int actionTimer;				// 0x3C
