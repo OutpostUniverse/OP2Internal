@@ -23,7 +23,7 @@ namespace OP2ForcedExport
 	{
 	public:
 		// Member functions
-		NetShutdown(int bSendQuitMessage);		// 0x00487E30
+		void NetShutdown(int bSendQuitMessage);		// 0x00487E30
 
 	public:
 		// Member variables
