@@ -76,7 +76,7 @@ namespace OP2ForcedExport
 	struct RenderChunk
 	{
 		int xOffset;						// 0x0  Pixel offset of this chunk of text
-		int stringStart;					// 0x4  Index of first strin char in this chunk
+		int stringStart;					// 0x4  Index of first string char in this chunk
 		int stringLen;						// 0x8  Length of this chunk in characters
 		int bIsEOL;							// 0xC  Is-End-Of-Line, used for text wrapping
 		COLORREF color;						// 0x10 Color used to render this chunk of text
