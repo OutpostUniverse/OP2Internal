@@ -141,6 +141,7 @@ extern "C" void* desiredLoadAddress;
 #include "Game\ScStub\ScStubGroupCombatBase.h"
 #include "Game\ScStub\ScStubGroupMineGroup.h"
 #include "Game\ScStub\ScStubGroupBuildGroup.h"
+#include "Game\ScStub\ScStubTrigger.h"
 
 
 namespace OP2ForcedExport
