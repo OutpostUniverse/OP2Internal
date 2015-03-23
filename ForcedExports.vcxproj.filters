@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DummyMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ForcedExports.h" />
+    <ClInclude Include="WinTypes.h" />
+    <ClInclude Include="Game\GameOpt.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UnitGroup.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\LevelDLL.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Map.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MiniMap.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Morale.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Player.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\RandomNumberGenerator.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Research.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Sheet.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TApp.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TethysGame.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\CommandPacket.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="PointTypes.h" />
+    <ClInclude Include="Game\Unit\Unit.h">
+      <Filter>Game\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Unit\UnitBuilding.h">
+      <Filter>Game\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Unit\UnitVehicle.h">
+      <Filter>Game\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Unit\UnitWeapon.h">
+      <Filter>Game\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UnitTypeInfo\UnitTypeInfo.h">
+      <Filter>Game\UnitTypeInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UnitTypeInfo\UnitTypeInfoBuilding.h">
+      <Filter>Game\UnitTypeInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UnitTypeInfo\UnitTypeInfoVehicle.h">
+      <Filter>Game\UnitTypeInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UnitTypeInfo\UnitTypeInfoWeapon.h">
+      <Filter>Game\UnitTypeInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameStartInfo\EnumGameTermReasons.h">
+      <Filter>Game\GameStartInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameStartInfo\EnumGameType.h">
+      <Filter>Game\GameStartInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameStartInfo\GameStartInfo.h">
+      <Filter>Game\GameStartInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameStartInfo\MoraleStartInfo.h">
+      <Filter>Game\GameStartInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameStartInfo\PlayerStartInfo.h">
+      <Filter>Game\GameStartInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameStartInfo\ResearchStartInfo.h">
+      <Filter>Game\GameStartInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameStartInfo\StartFlags.h">
+      <Filter>Game\GameStartInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ScStub\ScStub.h">
+      <Filter>Game\ScStub</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ScStub\ScStubCreator.h">
+      <Filter>Game\ScStub</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ScStub\ScStubGroup.h">
+      <Filter>Game\ScStub</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ScStub\ScStubGroupBuildGroup.h">
+      <Filter>Game\ScStub</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ScStub\ScStubGroupCombatBase.h">
+      <Filter>Game\ScStub</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ScStub\ScStubGroupMineGroup.h">
+      <Filter>Game\ScStub</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\GurManager.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetGameProtocol.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetTransportLayer.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Packet.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\AdaptiveHuffmanTree.h">
+      <Filter>ResourceManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Bitmap.h">
+      <Filter>ResourceManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\BitmapLightAdjustedBitmap.h">
+      <Filter>ResourceManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\BitmapLightAdjustedBitmapMemoryMappedBitmap.h">
+      <Filter>ResourceManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\BitmapLightAdjustedBitmapTileSet.h">
+      <Filter>ResourceManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\CConfig.h">
+      <Filter>ResourceManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\MusicManager.h">
+      <Filter>ResourceManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Palette.h">
+      <Filter>ResourceManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\PrtGraphics.h">
+      <Filter>ResourceManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\SoundEffectsManager.h">
+      <Filter>ResourceManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\TextStreamParser.h">
+      <Filter>ResourceManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\StreamIO.h">
+      <Filter>ResourceManagement\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\StreamIOBaseVBlkRWStream.h">
+      <Filter>ResourceManagement\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\StreamIOBaseVolFileStream.h">
+      <Filter>ResourceManagement\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\BasicStreams\FileRStream.h">
+      <Filter>ResourceManagement\Streams\BasicStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\BasicStreams\FileRWStream.h">
+      <Filter>ResourceManagement\Streams\BasicStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\BasicStreams\FileWStream.h">
+      <Filter>ResourceManagement\Streams\BasicStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\BasicStreams\MemRWStream.h">
+      <Filter>ResourceManagement\Streams\BasicStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\VBlkStreams\HeaderVBlkRWStream.h">
+      <Filter>ResourceManagement\Streams\VBlkStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\VBlkStreams\VBlkRWStream.h">
+      <Filter>ResourceManagement\Streams\VBlkStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\VolFileStreams\VolFileRStream.h">
+      <Filter>ResourceManagement\Streams\VolFileStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\VolFileStreams\VolFileWStream.h">
+      <Filter>ResourceManagement\Streams\VolFileStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\WrapperStreams\LZHRStream.h">
+      <Filter>ResourceManagement\Streams\WrapperStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\WrapperStreams\LZHWStream.h">
+      <Filter>ResourceManagement\Streams\WrapperStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\WrapperStreams\LZRStream.h">
+      <Filter>ResourceManagement\Streams\WrapperStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\WrapperStreams\LZWStream.h">
+      <Filter>ResourceManagement\Streams\WrapperStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\WrapperStreams\RLERStream.h">
+      <Filter>ResourceManagement\Streams\WrapperStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\Streams\WrapperStreams\RLEWStream.h">
+      <Filter>ResourceManagement\Streams\WrapperStreams</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Filter\Filter.h">
+      <Filter>UserInterface\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Filter\FilterGroupFilter.h">
+      <Filter>UserInterface\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Filter\FilterGroupFilterDetailPaneFilter.h">
+      <Filter>UserInterface\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Filter\FilterHotKeyFilter.h">
+      <Filter>UserInterface\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Filter\FilterNode.h">
+      <Filter>UserInterface\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Filter\FilterSubFilter.h">
+      <Filter>UserInterface\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Filter\FilterSubFilterMouseCommandFilter.h">
+      <Filter>UserInterface\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Filter\FilterUIElementFilter.h">
+      <Filter>UserInterface\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\CommandPaneView\CommandPaneView.h">
+      <Filter>UserInterface\CommandPaneView</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\CommandPaneView\ReportView.h">
+      <Filter>UserInterface\CommandPaneView</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\CommandPaneView\Views\BuildingStorageBayView.h">
+      <Filter>UserInterface\CommandPaneView\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\CommandPaneView\Views\UnitView.h">
+      <Filter>UserInterface\CommandPaneView\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\CommandPaneView\ReportViews\FactoryReportView.h">
+      <Filter>UserInterface\CommandPaneView\ReportViews</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\CommandPaneView\ReportViews\LabReportView.h">
+      <Filter>UserInterface\CommandPaneView\ReportViews</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Graphics\Font.h">
+      <Filter>UserInterface\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Graphics\GFXSurface.h">
+      <Filter>UserInterface\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Graphics\GFXSurfaceGFXCDSSurface.h">
+      <Filter>UserInterface\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Graphics\GFXSurfaceGFXCDSSurfaceGFXClippedSurface.h">
+      <Filter>UserInterface\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Graphics\GFXSurfaceGFXMemSurface.h">
+      <Filter>UserInterface\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Graphics\Viewport.h">
+      <Filter>UserInterface\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\IWnd\IWnd.h">
+      <Filter>UserInterface\IWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\IWnd\IWndIDlgWnd.h">
+      <Filter>UserInterface\IWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\IWnd\IWndIDlgWndMessageBoxWnd.h">
+      <Filter>UserInterface\IWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\IWnd\IWndIDlgWndMultiplayerPreGameSetupWnd.h">
+      <Filter>UserInterface\IWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\IWnd\IWndPane.h">
+      <Filter>UserInterface\IWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\IWnd\IWndPaneCommand.h">
+      <Filter>UserInterface\IWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\IWnd\IWndPaneDetail.h">
+      <Filter>UserInterface\IWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\IWnd\IWndPaneMiniMap.h">
+      <Filter>UserInterface\IWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\IWnd\IWndTFrame.h">
+      <Filter>UserInterface\IWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\IWnd\IWndTFrameDans_RULE_UIFrame.h">
+      <Filter>UserInterface\IWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UIElement\UIElement.h">
+      <Filter>UserInterface\UIElement</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UIElement\UIElementButton.h">
+      <Filter>UserInterface\UIElement</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButton.h">
+      <Filter>UserInterface\UIElement</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButtonBayButton.h">
+      <Filter>UserInterface\UIElement</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButtonMiscButton.h">
+      <Filter>UserInterface\UIElement</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButtonUICommandButton.h">
+      <Filter>UserInterface\UIElement</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButtonViewButton.h">
+      <Filter>UserInterface\UIElement</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButtonViewButtonBuildButton.h">
+      <Filter>UserInterface\UIElement</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButtonViewButtonReportPageButton.h">
+      <Filter>UserInterface\UIElement</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UIElement\UIElementListBox.h">
+      <Filter>UserInterface\UIElement</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UICommand\UICommand.h">
+      <Filter>UserInterface\UICommand</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UICommand\UICommandMouseCommand.h">
+      <Filter>UserInterface\UICommand</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UICommand\Commands\CommandProduce.h">
+      <Filter>UserInterface\UICommand\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UICommand\MouseCommands\CommandAttack.h">
+      <Filter>UserInterface\UICommand\MouseCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\UICommand\MouseCommands\CommandBuild.h">
+      <Filter>UserInterface\UICommand\MouseCommands</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ForcedExports.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{b256aadf-e044-48d8-878b-3bb68ca15426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Unit">
+      <UniqueIdentifier>{0f32cc3e-1f21-4b44-bbe1-7b474f51b214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameStartInfo">
+      <UniqueIdentifier>{393352e3-fcaa-4cef-8e70-30558fc7cb2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UnitTypeInfo">
+      <UniqueIdentifier>{21849722-b1b2-4c8e-9300-06a221c33c0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\ScStub">
+      <UniqueIdentifier>{0b78836a-e284-4e7c-ad55-adb46f3bc833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{5c413481-7510-40d4-b860-6c2156d0a6b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManagement">
+      <UniqueIdentifier>{ec484b38-8dea-486d-9280-bd549a619660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserInterface">
+      <UniqueIdentifier>{b1f00501-c79c-4512-9d8d-5b656a858967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManagement\Streams">
+      <UniqueIdentifier>{90b58df0-d4b3-41a0-940a-dce344190bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManagement\Streams\BasicStreams">
+      <UniqueIdentifier>{3e65256e-3f5a-4ff3-bf4d-0079b5788b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManagement\Streams\VBlkStreams">
+      <UniqueIdentifier>{b0c84cca-d05c-40fa-bbd4-3ca4a789123f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManagement\Streams\VolFileStreams">
+      <UniqueIdentifier>{e60a42f1-6266-4560-b8bb-7af591861486}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManagement\Streams\WrapperStreams">
+      <UniqueIdentifier>{a4395951-8c13-4375-aa15-599744ddfd5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserInterface\CommandPaneView">
+      <UniqueIdentifier>{17784b99-7448-4780-a115-791f0f6891b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserInterface\Filter">
+      <UniqueIdentifier>{8ed77ba2-829b-45a9-b66b-6b0c4c79bc0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserInterface\CommandPaneView\ReportViews">
+      <UniqueIdentifier>{2af2f285-59cf-47bb-a0fb-60253c712d6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserInterface\CommandPaneView\Views">
+      <UniqueIdentifier>{51e0cb40-0a1a-4f74-a9de-3c891f2bf61f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserInterface\Graphics">
+      <UniqueIdentifier>{4bc7c60d-8f83-42cd-a43f-1bdf5c10f29a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserInterface\IWnd">
+      <UniqueIdentifier>{c11b11d7-1242-4afe-a396-5bf47146b044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserInterface\UICommand">
+      <UniqueIdentifier>{e96324d8-ef46-4540-845a-7b3bb1abf00e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserInterface\UIElement">
+      <UniqueIdentifier>{c6bccabe-341d-4a0d-99ed-448d36779868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserInterface\UICommand\Commands">
+      <UniqueIdentifier>{e6f1ba13-9b52-4318-bb7e-28057a783487}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserInterface\UICommand\MouseCommands">
+      <UniqueIdentifier>{31056333-54c6-4775-b814-a530ed53576b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
