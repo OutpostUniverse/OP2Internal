@@ -11,10 +11,16 @@ enum map_id;
 namespace OP2ForcedExport
 {
 
+	class Unit;
+
+
 	// Size: 0x14
 	struct UnitNode
 	{
-		UnitNode* prev;						// 0x00
+		union {
+			int nextFreeIndex;				// 0x00
+			UnitNode* prev;					// 0x00
+		}
 		UnitNode* next;						// 0x04
 		Unit* unit;							// 0x08
 		int issueCommandTick;				// 0x0C ** [Set to 0xFFF00000 when adding unit to group, related to gameTick and deleteWhenEmpty]
@@ -40,11 +46,11 @@ namespace OP2ForcedExport
 	{
 	public:
 		// ----  [New virtual functions]
-		virtual int HasFired();					// 0x24
-		virtual void AddUnit(Unit* unit);		// 0x28
-		virtual void RemoveUnit(Unit* unit);	// 0x2C
-		virtual void A1();						// 0x30 **
-		virtual void A2();						// 0x34 **
+		virtual void HasFired();					// 0x24 ** [Name?]
+		virtual void AddUnit(Unit* unit);			// 0x28
+		virtual void RemoveUnit(Unit* unit);		// 0x2C
+		virtual void RemoveDeadAndCapturedUnits();	// 0x30
+		virtual void A2();							// 0x34 **
 		// ----
 
 	public:
@@ -61,6 +67,10 @@ namespace OP2ForcedExport
 		int ownerPlayerNum;				// 0x2F4 (All units in group should belong to this player)
 		int deleteWhenEmptyTick;		// 0x2F8 (Initialized to MAX_INT, set to TethysGame.tick + 10000 by SetDeleteWhenEmpty(true))
 		int bSetLights;					// 0x2FC (Initialized to 1 (on))
+		// ...? 0x300? 0x304?
+		int a5;							// 0x300 ** (Part of this class, or derived classes?)
+		int a6;							// 0x304 ** (Part of this class, or derived classes?)
+		// ----
 	};
 
 }	// End namespace
