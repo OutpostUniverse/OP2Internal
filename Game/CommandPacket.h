@@ -11,10 +11,10 @@ namespace OP2ForcedExport
 	#pragma pack(push, 1)
 	struct CommandPacketHeader
 	{
-		int messageType;
-		short dataLength;
-		int timeStamp;
-		int unknown;					// **
+		int messageType;				// 0x00
+		short dataLength;				// 0x04
+		int timeStamp;					// 0x06
+		int unknown;					// 0x0A **
 	};
 	#pragma pack(pop)
 
@@ -23,7 +23,7 @@ namespace OP2ForcedExport
 	struct CommandPacket
 	{
 		CommandPacketHeader cpHeader;
-		char data[99];					// ** [Need adjustment after pragma pack?]
+		char data[99];					// 0x0E ** [Need adjustment after pragma pack?]
 	};
 
 
@@ -123,17 +123,17 @@ namespace OP2ForcedExport
 
 		struct Produce
 		{
-			short factoryUnitIndex;
-			short itemType;		// enum map_id
-			short weaponType;	// enum map_id
-			short scStubIndex;	// -1 if not used
+			short factoryUnitIndex;		// 0x0E
+			short itemType;				// 0x10 enum map_id
+			short weaponType;			// 0x12 enum map_id
+			short scStubIndex;			// 0x14 -1 if not used
 		};
 
 		struct TransferCargo
 		{
-			short buildingUnitIndex;
-			short bayIndex;
-			short unknown;		// ** Might be scStubIndex, set to 0 if not used
+			short buildingUnitIndex;	// 0x0E
+			short bayIndex;				// 0x10
+			short unknown;				// 0x12 ** Might be scStubIndex, set to 0 if not used
 		};
 
 		struct LoadUnloadCargo
