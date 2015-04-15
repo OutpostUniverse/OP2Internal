@@ -29,6 +29,7 @@ namespace OP2ForcedExport
 		int enableStatus;	// 0x8 (Values 0, 1, 2?)
 		int unknown1;		// 0xC  **
 		int unknown2;		// 0x10 **
+		// ----
 	};
 
 }	// End namespace
