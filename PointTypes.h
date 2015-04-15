@@ -27,6 +27,11 @@ namespace OP2ForcedExport
 			};
 			struct
 			{
+				Point p1;
+				Point p2;
+			};
+			struct
+			{
 				Point topLeft;
 				Point bottomRight;
 			};
