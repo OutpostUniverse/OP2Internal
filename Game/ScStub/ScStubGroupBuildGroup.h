@@ -17,7 +17,7 @@ namespace OP2ForcedExport
 	// Size: 0x1C (28 bytes)
 	struct RecordedBuilding
 	{
-		RECT buildingTileRect			// 0x00
+		RECT buildingTileRect;			// 0x00
 		map_id buildingType;			// 0x10
 		map_id weaponType;				// 0x14
 		int groupScStubIndex;			// 0x18 **
@@ -26,7 +26,7 @@ namespace OP2ForcedExport
 	// Size: 0x1C (28 bytes)
 	struct RecordedMine
 	{
-		RECT mineTileRect				// 0x00
+		RECT mineTileRect;				// 0x00
 		map_id mineType;				// 0x10
 		int groupScStubIndex;			// 0x14 **
 		int a4;							// 0x18 **

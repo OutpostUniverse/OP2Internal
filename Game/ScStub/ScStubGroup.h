@@ -20,7 +20,7 @@ namespace OP2ForcedExport
 		union {
 			int nextFreeIndex;				// 0x00
 			UnitNode* prev;					// 0x00
-		}
+		};
 		UnitNode* next;						// 0x04
 		Unit* unit;							// 0x08
 		int issueCommandTick;				// 0x0C ** [Set to 0xFFF00000 when adding unit to group, related to gameTick and deleteWhenEmpty]
