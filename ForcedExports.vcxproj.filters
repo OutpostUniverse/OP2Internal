@@ -340,6 +340,15 @@
     <ClInclude Include="UserInterface\UICommand\MouseCommands\CommandBuild.h">
       <Filter>UserInterface\UICommand\MouseCommands</Filter>
     </ClInclude>
+    <ClInclude Include="Game\WayPoint.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Unit\Path.h">
+      <Filter>Game\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Unit\PathFinder.h">
+      <Filter>Game\Unit</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ForcedExports.asm" />

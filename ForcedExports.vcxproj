@@ -80,10 +80,13 @@
     <ClInclude Include="Game\UnitTypeInfo\UnitTypeInfoBuilding.h" />
     <ClInclude Include="Game\UnitTypeInfo\UnitTypeInfoVehicle.h" />
     <ClInclude Include="Game\UnitTypeInfo\UnitTypeInfoWeapon.h" />
+    <ClInclude Include="Game\Unit\Path.h" />
+    <ClInclude Include="Game\Unit\PathFinder.h" />
     <ClInclude Include="Game\Unit\Unit.h" />
     <ClInclude Include="Game\Unit\UnitBuilding.h" />
     <ClInclude Include="Game\Unit\UnitVehicle.h" />
     <ClInclude Include="Game\Unit\UnitWeapon.h" />
+    <ClInclude Include="Game\WayPoint.h" />
     <ClInclude Include="Network\GurManager.h" />
     <ClInclude Include="Network\NetGameProtocol.h" />
     <ClInclude Include="Network\NetTransportLayer.h" />
