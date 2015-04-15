@@ -6,6 +6,7 @@
 
 
 #include "ScStubGroup.h"
+#include "../../PointTypes.h"
 
 
 enum map_id;
@@ -17,7 +18,7 @@ namespace OP2ForcedExport
 	// Size: 0x1C (28 bytes)
 	struct RecordedBuilding
 	{
-		RECT buildingTileRect;			// 0x00
+		Rect buildingTileRect;			// 0x00
 		map_id buildingType;			// 0x10
 		map_id weaponType;				// 0x14
 		int groupScStubIndex;			// 0x18 **
@@ -26,7 +27,7 @@ namespace OP2ForcedExport
 	// Size: 0x1C (28 bytes)
 	struct RecordedMine
 	{
-		RECT mineTileRect;				// 0x00
+		Rect mineTileRect;				// 0x00
 		map_id mineType;				// 0x10
 		int groupScStubIndex;			// 0x14 **
 		int a4;							// 0x18 **
@@ -67,7 +68,7 @@ namespace OP2ForcedExport
 			int numRecordedMines;				 // 0x32C
 			int numRecordedTubesWalls;			 // 0x330
 			int numRecordedVehGroup;			 // 0x334
-			RECT defaultPixelRect;				 // 0x338
+			Rect defaultPixelRect;				 // 0x338
 			int a18;							 // 0x348 ** (=0) (Index into function pointer table)
 		};
 		int convecUnitIndex;					// 0x34C (TransferCargo related)
