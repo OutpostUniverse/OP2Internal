@@ -6,10 +6,8 @@
 
 
 #include "ScStubGroup.h"
-
-// **TODO** Properly define Waypoint (it's a bit field the size of an int)
-//#include "Waypoint.h"
-typedef int Waypoint;
+#include "../Waypoint.h"
+#include "../../PointTypes.h"
 
 
 enum map_id;
@@ -40,15 +38,15 @@ namespace OP2ForcedExport
 		int a1;							// 0x310 ** [Set to 0xFFF00000, related to game tick, possibly spider related]
 		int numWaypoints;				// 0x314
 		int a2;							// 0x318 ** (Set in SetWaypoints to unknown parameter, used in IssuePatrol)
-		Waypoint waypointList[8];		// 0x31C
+		WayPoint wayPointList[8];		// 0x31C
 		int patrolMode;					// 0x33C (Initialized to 0)
 		int followMode;					// 0x340 (Initialized to 0)
-		RECT pixelRect;					// 0x344 (SetRect converted to pixels) (rect.p1.y initialized to -1)
+		Rect pixelRect;					// 0x344 (SetRect converted to pixels) (rect.p1.y initialized to -1)
 		int targetGroupIndex;			// 0x354 (Initialized to -1)
 		map_id attackType;				// 0x358 (Initialized to 0  [mapNone])
 		int targetUnitIndex;			// 0x35C (Initialized to -1)
 		int numGuardedRects;			// 0x360
-		RECT guardedRect[8];			// 0x364
+		Rect guardedRect[8];			// 0x364
 		int a3Index;					// 0x3E4 ** (Index into a list of objects with 5 function pointers each)
 		// ----
 	};
