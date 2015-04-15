@@ -5,6 +5,9 @@
 #define CommandPacket_H
 
 
+#include "WayPoint.h"
+
+
 namespace OP2ForcedExport
 {
 
@@ -42,11 +45,6 @@ namespace OP2ForcedExport
 			short unitIndex[1];	// List of unit indexes
 		};
 
-		struct WayPoint
-		{
-			unsigned int pixelX:15;
-			unsigned int pixelY:14;
-		};
 		struct WayPointList
 		{
 			short numWayPoints;
