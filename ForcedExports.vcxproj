@@ -51,6 +51,8 @@
   <ItemGroup>
     <ClInclude Include="ForcedExports.h" />
     <ClInclude Include="Game\CommandPacket.h" />
+    <ClInclude Include="Game\EnumActionType.h" />
+    <ClInclude Include="Game\EnumCommandType.h" />
     <ClInclude Include="Game\GameOpt.h" />
     <ClInclude Include="Game\GameStartInfo\EnumGameTermReasons.h" />
     <ClInclude Include="Game\GameStartInfo\EnumGameType.h" />

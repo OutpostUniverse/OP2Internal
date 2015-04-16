@@ -119,6 +119,8 @@ extern "C" void* desiredLoadAddress;
 #include "Game\TethysGame.h"
 #include "Game\Player.h"
 #include "Game\CommandPacket.h"
+#include "Game\EnumCommandType.h"
+#include "Game\EnumActionType.h"
 #include "Game\TApp.h"
 #include "Game\Map.h"
 #include "Game\LevelDLL.h"

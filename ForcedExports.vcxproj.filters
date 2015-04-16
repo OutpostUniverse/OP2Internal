@@ -349,6 +349,12 @@
     <ClInclude Include="Game\Unit\PathFinder.h">
       <Filter>Game\Unit</Filter>
     </ClInclude>
+    <ClInclude Include="Game\EnumActionType.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\EnumCommandType.h">
+      <Filter>Game</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ForcedExports.asm" />
