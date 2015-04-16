@@ -4,6 +4,9 @@
 #define Path_H
 
 
+#include "../WayPoint.h"
+
+
 namespace OP2ForcedExport
 {
 
@@ -14,13 +17,15 @@ namespace OP2ForcedExport
 			int numWaypoints;		// 0x00 ** See offset 0x74
 		};
 		int lastWaypointIndex;		// 0x04
-		//
-		int waypointList[8];		// 0x14 ** Packed bitfield
-		//
+		int _08;					// 0x08 **
+		int _0C;					// 0x0C **
+		int _10;					// 0x10 **
+		WayPoint wayPointList[8];	// 0x14
 		int flags;					// 0x34 **
 		Path* next;					// 0x38 **
 		int a0Enum;					// 0x3C ** (0 = Move/Dock/DockEG/StandGround/CargoRoute/Patrol/Build, 3 = RemoveWall)
-		//
+		int _40;					// 0x40 **
+		int _44;					// 0x44 **
 		int currentPixelX;			// 0x48 ** (or start)
 		int currentPixelY;			// 0x4C ** (or start)
 		int destTileX;				// 0x50
@@ -37,7 +42,7 @@ namespace OP2ForcedExport
 		int a9;						// 0x70 ** (Used as range in call to Rand, set using results)
 		int numWaypoints;			// 0x74
 		int currentWaypoint;		// 0x78
-		char direction[0];			// 0x7C ** (0..7: 0 = Right, increases clockwise, 45 degree increments)
+		char direction[80];			// 0x7C ** (0..7: 0 = Right, increases clockwise, 45 degree increments)
 		int a10;					// 0xBC **
 		int a11;					// 0xC0 **
 		//
