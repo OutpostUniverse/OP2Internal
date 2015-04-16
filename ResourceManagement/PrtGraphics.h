@@ -44,23 +44,24 @@ namespace OP2ForcedExport
 	// Size: 4
 	struct FrameOptionalInfo
 	{
-		char offsetX;
-		char offsetY;
-		char b1;				// **
-		char b2;				// **
+		int offsetX:8;
+		int offsetY:8;
+		int offsetX2:8;			// **
+		int offsetY2:8;			// **
 	};
 
 	// Size: 112
 	struct AnimationInfo
 	{
-		int b1;					// **
-		Rect selectionBox;
-		int displacementX;
-		int displacementY;
-		int b2;					// **
-		int numFrames;
-		FrameInfo* frameData;	// Pointer to array of FrameData  [ordered in master list]
-		short frameOptionalInfoStartIndex;
+		int b1;								// 0x00 **
+		Rect selectionBox;					// 0x04
+		int displacementX;					// 0x14
+		int displacementY;					// 0x18
+		int b2;								// 0x1C **
+		int numFrames;						// 0x20
+		FrameInfo* frameData;				// 0x24 Pointer to array of FrameData  [ordered in master list]
+		short frameOptionalInfoStartIndex;	// 0x28
+		// ...
 	};
 
 
@@ -73,9 +74,9 @@ namespace OP2ForcedExport
 
 	public:
 		// Member variables
-		char* palData;			// ** Maybe?
-		int palSize;			// ** Maybe?
-		ImageInfo imageInfo[5608];
+		char* palData;							// 0x04 ** Maybe?
+		int palSize;							// 0x08 ** Maybe?
+		ImageInfo imageInfo[5608];				// 0x0C
 		int numImages;
 		AnimationInfo animationInfo[2176];
 		int numAnimations;
