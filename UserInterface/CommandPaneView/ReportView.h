@@ -7,7 +7,7 @@
 #include "CommandPaneView.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	class ReportView : public CommandPaneView

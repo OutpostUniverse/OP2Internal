@@ -10,7 +10,7 @@
 #include "GameStartInfo\PlayerStartInfo.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	class Unit;

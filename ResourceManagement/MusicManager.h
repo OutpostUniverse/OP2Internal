@@ -10,7 +10,7 @@
 struct DirectSoundBuffer;
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	enum SongIds;

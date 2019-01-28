@@ -6,7 +6,7 @@
 #define Palette_H
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	class StreamIO;

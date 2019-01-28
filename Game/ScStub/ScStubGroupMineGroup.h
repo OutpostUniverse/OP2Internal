@@ -5,7 +5,7 @@
 #include "ScStubGroup.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	// Size: Base + 0x30 (minimum)

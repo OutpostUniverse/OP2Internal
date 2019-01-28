@@ -4,7 +4,7 @@
 #define StreamIO_H
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	// Min Size: 0xC

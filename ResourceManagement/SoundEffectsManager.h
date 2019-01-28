@@ -8,7 +8,7 @@
 struct DirectSoundBuffer;
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	// Min Size: 0x24  [Member field access]

@@ -7,7 +7,7 @@
 #include "..\UICommand.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	class CommandProduce : public UICommand

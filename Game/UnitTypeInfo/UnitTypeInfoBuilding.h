@@ -7,7 +7,7 @@
 #include "UnitTypeInfo.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	class BuildingUnitTypeInfo : public UnitTypeInfo

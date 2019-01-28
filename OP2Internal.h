@@ -142,7 +142,7 @@ extern "C" void* desiredLoadAddress;
 #include "Game\ScStub\ScStubTrigger.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 	int scr_snprintf(char* dest, unsigned int bufferSize, char const * format, ...);
 

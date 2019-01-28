@@ -7,7 +7,7 @@
 #include "IWnd.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	// Size: 0x20

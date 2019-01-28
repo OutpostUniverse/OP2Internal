@@ -7,7 +7,7 @@
 #include "UIElementButtonGraphicalButton.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	// UIElement:Button:GraphicalButton derived classes

@@ -4,7 +4,7 @@
 #define PointTypes_H
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 	// Common Types
 

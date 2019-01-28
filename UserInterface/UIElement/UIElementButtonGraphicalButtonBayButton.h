@@ -7,7 +7,7 @@
 #include "UIElementButtonGraphicalButton.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	class BayButton : public GraphicalButton

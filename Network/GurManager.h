@@ -7,7 +7,7 @@
 #include "Packet.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	class NetTransportLayer;

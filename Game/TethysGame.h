@@ -9,7 +9,7 @@
 #include "Player.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	enum GameTermReasons;

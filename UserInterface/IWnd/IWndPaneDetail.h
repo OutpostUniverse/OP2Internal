@@ -7,7 +7,7 @@
 #include "IWndPane.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	// Address: 0x5758B4

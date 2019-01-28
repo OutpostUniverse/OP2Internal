@@ -8,7 +8,7 @@
 #include "..\..\Game\GameStartInfo\GameStartInfo.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	struct HostGameParameters

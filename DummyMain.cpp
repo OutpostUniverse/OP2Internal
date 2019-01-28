@@ -4,7 +4,7 @@
 #include "OP2Internal.h"
 
 
-using namespace OP2ForcedExport;
+using namespace OP2Internal;
 
 // Data definitions
 Sheet& sheet = *(Sheet*)0x0055B780;		// 0x0055B780

@@ -7,7 +7,7 @@
 #include "..\StreamIOBaseVolFileStream.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	class VolFileWStream : public BaseVolFileStream
