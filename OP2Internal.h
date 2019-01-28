@@ -1,5 +1,5 @@
 
-// ForcedExports.h
+// OP2Internal.h
 // ---------------
 // Master include file for this API. This includes everything.
 // Just including this main header files is for convenience.
@@ -8,8 +8,8 @@
 // time, and a possibly cleaner namespace (for IntelliSense maybe?).
 
 
-#ifndef ForcedExports_H
-#define ForcedExports_H
+#ifndef OP2Internal_H
+#define OP2Internal_H
 
 
 // Used for sanity checking in DLLMain
