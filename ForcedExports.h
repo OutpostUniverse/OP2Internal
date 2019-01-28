@@ -150,8 +150,8 @@ namespace OP2ForcedExport
 	// Operators New/Delete
 	// --------------------
 	// [stdcall]
-	//void* MemAlloc(int numBytesToAlloc);								// 0x004C0F40
-	//void Free(void* memToFree);										// 0x004C0F30
+	// void* MemAlloc(int numBytesToAlloc);								// 0x004C0F40
+	// void Free(void* memToFree);										// 0x004C0F30
 	// [cdecl]
 	// void* __cdecl __nh_malloc(int numBytesToAlloc, int flags);		// 0x004C2210
 	// void* malloc(int numBytesToAlloc);								// 0x004C21F0
