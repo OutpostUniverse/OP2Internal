@@ -7,7 +7,7 @@
 #include "..\PointTypes.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	class GFXClippedSurface;

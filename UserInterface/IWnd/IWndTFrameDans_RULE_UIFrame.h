@@ -13,7 +13,7 @@
 #include "IWndPaneCommand.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	struct IniSettings

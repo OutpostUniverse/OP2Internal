@@ -8,7 +8,7 @@
 #include "WayPoint.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	#pragma pack(push, 1)

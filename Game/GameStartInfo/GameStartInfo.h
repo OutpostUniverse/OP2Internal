@@ -12,7 +12,7 @@
 #include "ResearchStartInfo.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	// Size: 0xBA

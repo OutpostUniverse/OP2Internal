@@ -3,7 +3,7 @@
 #define EnumCommandType_H
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 	enum CommandType
 	{

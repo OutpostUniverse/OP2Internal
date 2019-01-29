@@ -7,7 +7,7 @@
 #include "Unit.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	class Weapon : public PlayerUnit

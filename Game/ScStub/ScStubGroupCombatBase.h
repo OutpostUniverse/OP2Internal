@@ -13,7 +13,7 @@
 enum map_id;
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 	//enum CombatGroupObjective
 	//{

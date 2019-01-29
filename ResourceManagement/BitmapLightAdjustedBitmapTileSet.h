@@ -11,7 +11,7 @@ typedef struct tagPALETTEENTRY PALETTEENTRY;
 typedef struct tagRGBQUAD RGBQUAD;
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	// Min Size: 

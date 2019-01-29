@@ -8,7 +8,7 @@
 #include "..\BasicStreams\FileRStream.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	// Min Size: 0x980  [Field access and contained object size]

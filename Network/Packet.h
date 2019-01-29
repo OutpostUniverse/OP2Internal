@@ -10,7 +10,7 @@
 #include "..\Game\GameStartInfo\GameStartInfo.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	// Everything in this file should be byte aligned

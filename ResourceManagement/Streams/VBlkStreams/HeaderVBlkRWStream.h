@@ -7,7 +7,7 @@
 #include "..\StreamIOBaseVBlkRWStream.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	// Used to read VOL header sections  ['VOL ', 'volh', 'vols', 'voli']

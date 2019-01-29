@@ -12,7 +12,7 @@
 enum map_id;
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	// Size: 0x1C (28 bytes)

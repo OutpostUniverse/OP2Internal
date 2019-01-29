@@ -7,7 +7,7 @@
 #include "..\UICommandMouseCommand.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	class CommandBuild : public MouseCommand

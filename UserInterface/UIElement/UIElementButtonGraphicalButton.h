@@ -7,7 +7,7 @@
 #include "UIElementButton.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	class Font;

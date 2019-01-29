@@ -7,7 +7,7 @@
 #include "IWndIDlgWnd.h"
 
 
-namespace OP2ForcedExport
+namespace OP2Internal
 {
 
 	class MsgBoxWnd : public IDlgWnd

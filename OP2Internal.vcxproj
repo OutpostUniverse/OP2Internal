@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{97594BB1-793F-379B-F6AB-040AC8FE1424}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DummyMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OP2Internal.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OP2Internal.h" />
+    <ClInclude Include="Game\CommandPacket.h" />
+    <ClInclude Include="Game\EnumActionType.h" />
+    <ClInclude Include="Game\EnumCommandType.h" />
+    <ClInclude Include="Game\GameOpt.h" />
+    <ClInclude Include="Game\GameStartInfo\EnumGameTermReasons.h" />
+    <ClInclude Include="Game\GameStartInfo\EnumGameType.h" />
+    <ClInclude Include="Game\GameStartInfo\GameStartInfo.h" />
+    <ClInclude Include="Game\GameStartInfo\MoraleStartInfo.h" />
+    <ClInclude Include="Game\GameStartInfo\PlayerStartInfo.h" />
+    <ClInclude Include="Game\GameStartInfo\ResearchStartInfo.h" />
+    <ClInclude Include="Game\GameStartInfo\StartFlags.h" />
+    <ClInclude Include="Game\LevelDLL.h" />
+    <ClInclude Include="Game\Map.h" />
+    <ClInclude Include="Game\MiniMap.h" />
+    <ClInclude Include="Game\Morale.h" />
+    <ClInclude Include="Game\Player.h" />
+    <ClInclude Include="Game\RandomNumberGenerator.h" />
+    <ClInclude Include="Game\Research.h" />
+    <ClInclude Include="Game\ScStub\ScStub.h" />
+    <ClInclude Include="Game\ScStub\ScStubCreator.h" />
+    <ClInclude Include="Game\ScStub\ScStubGroup.h" />
+    <ClInclude Include="Game\ScStub\ScStubGroupBuildGroup.h" />
+    <ClInclude Include="Game\ScStub\ScStubGroupCombatBase.h" />
+    <ClInclude Include="Game\ScStub\ScStubGroupMineGroup.h" />
+    <ClInclude Include="Game\Sheet.h" />
+    <ClInclude Include="Game\TApp.h" />
+    <ClInclude Include="Game\TethysGame.h" />
+    <ClInclude Include="Game\UnitGroup.h" />
+    <ClInclude Include="Game\UnitTypeInfo\UnitTypeInfo.h" />
+    <ClInclude Include="Game\UnitTypeInfo\UnitTypeInfoBuilding.h" />
+    <ClInclude Include="Game\UnitTypeInfo\UnitTypeInfoVehicle.h" />
+    <ClInclude Include="Game\UnitTypeInfo\UnitTypeInfoWeapon.h" />
+    <ClInclude Include="Game\Unit\Path.h" />
+    <ClInclude Include="Game\Unit\PathFinder.h" />
+    <ClInclude Include="Game\Unit\Unit.h" />
+    <ClInclude Include="Game\Unit\UnitBuilding.h" />
+    <ClInclude Include="Game\Unit\UnitVehicle.h" />
+    <ClInclude Include="Game\Unit\UnitWeapon.h" />
+    <ClInclude Include="Game\WayPoint.h" />
+    <ClInclude Include="Network\GurManager.h" />
+    <ClInclude Include="Network\NetGameProtocol.h" />
+    <ClInclude Include="Network\NetTransportLayer.h" />
+    <ClInclude Include="Network\Packet.h" />
+    <ClInclude Include="PointTypes.h" />
+    <ClInclude Include="ResourceManagement\AdaptiveHuffmanTree.h" />
+    <ClInclude Include="ResourceManagement\Bitmap.h" />
+    <ClInclude Include="ResourceManagement\BitmapLightAdjustedBitmap.h" />
+    <ClInclude Include="ResourceManagement\BitmapLightAdjustedBitmapMemoryMappedBitmap.h" />
+    <ClInclude Include="ResourceManagement\BitmapLightAdjustedBitmapTileSet.h" />
+    <ClInclude Include="ResourceManagement\CConfig.h" />
+    <ClInclude Include="ResourceManagement\MusicManager.h" />
+    <ClInclude Include="ResourceManagement\Palette.h" />
+    <ClInclude Include="ResourceManagement\PrtGraphics.h" />
+    <ClInclude Include="ResourceManagement\SoundEffectsManager.h" />
+    <ClInclude Include="ResourceManagement\Streams\BasicStreams\FileRStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\BasicStreams\FileRWStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\BasicStreams\FileWStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\BasicStreams\MemRWStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\StreamIO.h" />
+    <ClInclude Include="ResourceManagement\Streams\StreamIOBaseVBlkRWStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\StreamIOBaseVolFileStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\VBlkStreams\HeaderVBlkRWStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\VBlkStreams\VBlkRWStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\VolFileStreams\VolFileRStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\VolFileStreams\VolFileWStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\WrapperStreams\LZHRStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\WrapperStreams\LZHWStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\WrapperStreams\LZRStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\WrapperStreams\LZWStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\WrapperStreams\RLERStream.h" />
+    <ClInclude Include="ResourceManagement\Streams\WrapperStreams\RLEWStream.h" />
+    <ClInclude Include="ResourceManagement\TextStreamParser.h" />
+    <ClInclude Include="UserInterface\CommandPaneView\CommandPaneView.h" />
+    <ClInclude Include="UserInterface\CommandPaneView\ReportView.h" />
+    <ClInclude Include="UserInterface\CommandPaneView\ReportViews\FactoryReportView.h" />
+    <ClInclude Include="UserInterface\CommandPaneView\ReportViews\LabReportView.h" />
+    <ClInclude Include="UserInterface\CommandPaneView\Views\BuildingStorageBayView.h" />
+    <ClInclude Include="UserInterface\CommandPaneView\Views\UnitView.h" />
+    <ClInclude Include="UserInterface\Filter\Filter.h" />
+    <ClInclude Include="UserInterface\Filter\FilterGroupFilter.h" />
+    <ClInclude Include="UserInterface\Filter\FilterGroupFilterDetailPaneFilter.h" />
+    <ClInclude Include="UserInterface\Filter\FilterHotKeyFilter.h" />
+    <ClInclude Include="UserInterface\Filter\FilterNode.h" />
+    <ClInclude Include="UserInterface\Filter\FilterSubFilter.h" />
+    <ClInclude Include="UserInterface\Filter\FilterSubFilterMouseCommandFilter.h" />
+    <ClInclude Include="UserInterface\Filter\FilterUIElementFilter.h" />
+    <ClInclude Include="UserInterface\Graphics\Font.h" />
+    <ClInclude Include="UserInterface\Graphics\GFXSurface.h" />
+    <ClInclude Include="UserInterface\Graphics\GFXSurfaceGFXCDSSurface.h" />
+    <ClInclude Include="UserInterface\Graphics\GFXSurfaceGFXCDSSurfaceGFXClippedSurface.h" />
+    <ClInclude Include="UserInterface\Graphics\GFXSurfaceGFXMemSurface.h" />
+    <ClInclude Include="UserInterface\Graphics\Viewport.h" />
+    <ClInclude Include="UserInterface\IWnd\IWnd.h" />
+    <ClInclude Include="UserInterface\IWnd\IWndIDlgWnd.h" />
+    <ClInclude Include="UserInterface\IWnd\IWndIDlgWndMessageBoxWnd.h" />
+    <ClInclude Include="UserInterface\IWnd\IWndIDlgWndMultiplayerPreGameSetupWnd.h" />
+    <ClInclude Include="UserInterface\IWnd\IWndPane.h" />
+    <ClInclude Include="UserInterface\IWnd\IWndPaneCommand.h" />
+    <ClInclude Include="UserInterface\IWnd\IWndPaneDetail.h" />
+    <ClInclude Include="UserInterface\IWnd\IWndPaneMiniMap.h" />
+    <ClInclude Include="UserInterface\IWnd\IWndTFrame.h" />
+    <ClInclude Include="UserInterface\IWnd\IWndTFrameDans_RULE_UIFrame.h" />
+    <ClInclude Include="UserInterface\UICommand\Commands\CommandProduce.h" />
+    <ClInclude Include="UserInterface\UICommand\MouseCommands\CommandAttack.h" />
+    <ClInclude Include="UserInterface\UICommand\MouseCommands\CommandBuild.h" />
+    <ClInclude Include="UserInterface\UICommand\UICommand.h" />
+    <ClInclude Include="UserInterface\UICommand\UICommandMouseCommand.h" />
+    <ClInclude Include="UserInterface\UIElement\UIElement.h" />
+    <ClInclude Include="UserInterface\UIElement\UIElementButton.h" />
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButton.h" />
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButtonBayButton.h" />
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButtonMiscButton.h" />
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButtonUICommandButton.h" />
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButtonViewButton.h" />
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButtonViewButtonBuildButton.h" />
+    <ClInclude Include="UserInterface\UIElement\UIElementButtonGraphicalButtonViewButtonReportPageButton.h" />
+    <ClInclude Include="UserInterface\UIElement\UIElementListBox.h" />
+    <ClInclude Include="WinTypes.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
