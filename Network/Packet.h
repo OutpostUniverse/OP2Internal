@@ -7,7 +7,7 @@
 // Bring in definitions of structs: GUID, sockaddr_in
 #include <winsock2.h>
 
-#include "..\Game\GameStartInfo\GameStartInfo.h"
+#include "../Game/GameStartInfo/GameStartInfo.h"
 
 
 namespace OP2Internal

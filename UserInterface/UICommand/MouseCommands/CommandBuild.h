@@ -4,7 +4,7 @@
 #define CommandBuild_H
 
 
-#include "..\UICommandMouseCommand.h"
+#include "../UICommandMouseCommand.h"
 
 
 namespace OP2Internal

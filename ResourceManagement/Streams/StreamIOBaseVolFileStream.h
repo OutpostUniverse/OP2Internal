@@ -5,12 +5,12 @@
 
 
 #include "StreamIO.h"
-#include "BasicStreams\MemRWStream.h"
-#include "VBlkStreams\VBlkRWStream.h"
-#include "WrapperStreams\RLERStream.h"
-#include "WrapperStreams\LZHRStream.h"
-#include "WrapperStreams\LZRStream.h"
-#include "..\..\WinTypes.h"
+#include "BasicStreams/MemRWStream.h"
+#include "VBlkStreams/VBlkRWStream.h"
+#include "WrapperStreams/RLERStream.h"
+#include "WrapperStreams/LZHRStream.h"
+#include "WrapperStreams/LZRStream.h"
+#include "../../WinTypes.h"
 
 
 namespace OP2Internal

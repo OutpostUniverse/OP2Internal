@@ -4,7 +4,7 @@
 #define VolFileWStream_H
 
 
-#include "..\StreamIOBaseVolFileStream.h"
+#include "../StreamIOBaseVolFileStream.h"
 
 
 namespace OP2Internal

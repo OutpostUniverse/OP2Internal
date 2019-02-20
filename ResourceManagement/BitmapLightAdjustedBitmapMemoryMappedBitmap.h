@@ -5,7 +5,7 @@
 
 
 #include "BitmapLightAdjustedBitmap.h"
-#include "..\WinTypes.h"
+#include "../WinTypes.h"
 
 
 namespace OP2Internal

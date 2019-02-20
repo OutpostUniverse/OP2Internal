@@ -9,7 +9,7 @@
 
 #include "GFXSurfaceGFXCDSSurface.h"
 #include "Viewport.h"
-#include "..\..\PointTypes.h"
+#include "../../PointTypes.h"
 
 
 namespace OP2Internal

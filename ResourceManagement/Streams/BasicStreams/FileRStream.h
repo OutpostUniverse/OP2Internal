@@ -4,8 +4,8 @@
 #define FileRStream_H
 
 
-#include "..\StreamIO.h"
-#include "..\..\..\WinTypes.h"
+#include "../StreamIO.h"
+#include "../../../WinTypes.h"
 
 
 namespace OP2Internal

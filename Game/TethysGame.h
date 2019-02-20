@@ -5,7 +5,7 @@
 
 
 #include "GameOpt.h"
-#include "GameStartInfo\GameStartInfo.h"
+#include "GameStartInfo/GameStartInfo.h"
 #include "Player.h"
 
 
