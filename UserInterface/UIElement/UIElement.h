@@ -4,8 +4,8 @@
 #define UIElement_H
 
 
-#include "..\..\PointTypes.h"
-#include "..\..\WinTypes.h"
+#include "../../PointTypes.h"
+#include "../../WinTypes.h"
 
 
 namespace OP2Internal

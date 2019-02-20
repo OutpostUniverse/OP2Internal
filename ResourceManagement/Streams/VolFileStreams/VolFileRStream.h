@@ -4,8 +4,8 @@
 #define VolFileRStream_H
 
 
-#include "..\StreamIOBaseVolFileStream.h"
-#include "..\BasicStreams\FileRStream.h"
+#include "../StreamIOBaseVolFileStream.h"
+#include "../BasicStreams/FileRStream.h"
 
 
 namespace OP2Internal

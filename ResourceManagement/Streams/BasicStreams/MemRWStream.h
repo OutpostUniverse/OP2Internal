@@ -4,7 +4,7 @@
 #define MemRWStream_H
 
 
-#include "..\StreamIO.h"
+#include "../StreamIO.h"
 
 
 namespace OP2Internal

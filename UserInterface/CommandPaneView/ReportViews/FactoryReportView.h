@@ -4,9 +4,9 @@
 #define FactoryReportView_H
 
 
-#include "..\ReportView.h"
-#include "..\..\UIElement\UIElementListBox.h"
-#include "..\..\UIElement\UIElementButtonGraphicalButton.h"
+#include "../ReportView.h"
+#include "../../UIElement/UIElementListBox.h"
+#include "../../UIElement/UIElementButtonGraphicalButton.h"
 
 
 namespace OP2Internal

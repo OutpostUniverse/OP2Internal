@@ -5,7 +5,7 @@
 
 
 #include "IWndIDlgWnd.h"
-#include "..\..\Game\GameStartInfo\GameStartInfo.h"
+#include "../../Game/GameStartInfo/GameStartInfo.h"
 
 
 namespace OP2Internal

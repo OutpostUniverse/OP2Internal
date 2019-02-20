@@ -4,7 +4,7 @@
 #define VBlkRWStream_H
 
 
-#include "..\StreamIOBaseVBlkRWStream.h"
+#include "../StreamIOBaseVBlkRWStream.h"
 
 
 namespace OP2Internal

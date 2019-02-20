@@ -4,7 +4,7 @@
 #define LabReportView_H
 
 
-#include "..\ReportView.h"
+#include "../ReportView.h"
 
 
 namespace OP2Internal

@@ -4,7 +4,7 @@
 #define UnitView_H
 
 
-#include "..\CommandPaneView.h"
+#include "../CommandPaneView.h"
 
 
 namespace OP2Internal

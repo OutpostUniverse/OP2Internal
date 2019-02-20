@@ -5,7 +5,7 @@
 
 
 #include "IWndPane.h"
-#include "..\UIElement\UIElementButtonGraphicalButtonMiscButton.h"
+#include "../UIElement/UIElementButtonGraphicalButtonMiscButton.h"
 
 
 namespace OP2Internal
