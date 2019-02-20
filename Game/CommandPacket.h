@@ -5,7 +5,7 @@
 #define CommandPacket_H
 
 
-#include "WayPoint.h"
+#include "Waypoint.h"
 
 
 namespace OP2Internal
@@ -45,10 +45,10 @@ namespace OP2Internal
 			short unitIndex[1];	// List of unit indexes
 		};
 
-		struct WayPointList
+		struct WaypointList
 		{
-			short numWayPoints;
-			WayPoint wayPoint[1];
+			short numWaypoints;
+			Waypoint waypoint[1];
 		};
 		struct ShortPoint
 		{
@@ -80,9 +80,9 @@ namespace OP2Internal
 		struct CargoRoute
 		{
 			//UnitList
-			//WayPointList
-			short smelterWayPointIndex;
-			short mineWayPointIndex;
+			//WaypointList
+			short smelterWaypointIndex;
+			short mineWaypointIndex;
 			short mineUnitIndex;
 			short smelterUnitIndex;
 		};
@@ -90,7 +90,7 @@ namespace OP2Internal
 		struct Patrol
 		{
 			//UnitList
-			//WayPointList
+			//WaypointList
 			short unknown1;		// ** Probably waypoint indexes of end patrol endpoints
 			short unknown2;		// **
 		};
@@ -98,7 +98,7 @@ namespace OP2Internal
 		struct Build
 		{
 			//UnitList
-			//WayPointList
+			//WaypointList
 			ShortRect buildArea;
 			short unknown;		// ** Might be scStubIndex (related to BuildGroup), set to -1 if not used
 		};
@@ -106,7 +106,7 @@ namespace OP2Internal
 		struct BuildWall
 		{
 			//UnitList
-			//WayPointList
+			//WaypointList
 			ShortRect buildArea;
 			short tubeWallType;	// enum map_id
 			short unknown;		// ** Might be scStubIndex (related to BuildGroup), set to 0 if not used

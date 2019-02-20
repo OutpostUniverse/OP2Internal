@@ -339,7 +339,7 @@
     <ClInclude Include="UserInterface\UICommand\MouseCommands\CommandBuild.h">
       <Filter>UserInterface\UICommand\MouseCommands</Filter>
     </ClInclude>
-    <ClInclude Include="Game\WayPoint.h">
+    <ClInclude Include="Game\Waypoint.h">
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="Game\Unit\Path.h">
