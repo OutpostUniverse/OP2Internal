@@ -6,7 +6,7 @@
 
 
 #include "ScStubGroup.h"
-#include "../Waypoint.h"
+#include "../WayPoint.h"
 #include "../../PointTypes.h"
 
 

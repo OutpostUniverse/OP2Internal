@@ -36,7 +36,7 @@ extern "C" void* desiredLoadAddress;
 #include "ResourceManagement/BitmapLightAdjustedBitmapMemoryMappedBitmap.h"
 
 #include "ResourceManagement/Streams/StreamIO.h"
-#include "ResourceManagement/Streams/StreamIOBaseVblkRWStream.h"
+#include "ResourceManagement/Streams/StreamIOBaseVBlkRWStream.h"
 #include "ResourceManagement/Streams/StreamIOBaseVolFileStream.h"
 
 #include "ResourceManagement/Streams/BasicStreams/FileRStream.h"
