@@ -4,7 +4,7 @@
 #define Path_H
 
 
-#include "../WayPoint.h"
+#include "../Waypoint.h"
 
 
 namespace OP2Internal
@@ -20,7 +20,7 @@ namespace OP2Internal
 		int _08;					// 0x08 **
 		int _0C;					// 0x0C **
 		int _10;					// 0x10 **
-		WayPoint wayPointList[8];	// 0x14
+		Waypoint waypointList[8];	// 0x14
 		int flags;					// 0x34 **
 		Path* next;					// 0x38 **
 		int a0Enum;					// 0x3C ** (0 = Move/Dock/DockEG/StandGround/CargoRoute/Patrol/Build, 3 = RemoveWall)
