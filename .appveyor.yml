@@ -4,6 +4,7 @@ configuration:
   - Debug
 install:
   - choco install -y nasm
+  - set PATH=%ProgramFiles%\NASM;%PATH%
   - nasm -v
 build:
   project: OP2Internal.sln
