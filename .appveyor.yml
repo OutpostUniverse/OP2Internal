@@ -4,5 +4,6 @@ configuration:
   - Debug
 install:
   - choco install -y nasm
+  - nasm -v
 build:
   project: OP2Internal.sln
