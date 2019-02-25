@@ -45,12 +45,34 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
     </ClCompile>
+    <CustomBuild>
+      <Command>"C:\Program Files (x86)\NASM\nasm" -fwin32 "%(FullPath)" -o %(Filename).obj</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>Build ASM File</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <TreatOutputAsContent>true</TreatOutputAsContent>
+      <Outputs>%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CustomBuild>
+      <Command>"C:\Program Files (x86)\NASM\nasm" -fwin32 "%(FullPath)" -o %(Filename).obj</Command>
+      <Message>Build ASM File</Message>
+      <TreatOutputAsContent>true</TreatOutputAsContent>
+      <Outputs>%(Filename).obj</Outputs>
+    </CustomBuild>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DummyMain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="OP2Internal.asm" />
+    <CustomBuild Include="OP2Internal.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OP2Internal.obj;%(Outputs)</Outputs>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OP2Internal.h" />
