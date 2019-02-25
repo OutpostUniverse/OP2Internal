@@ -38,7 +38,7 @@ namespace OP2Internal
 		int a1;							// 0x310 ** [Set to 0xFFF00000, related to game tick, possibly spider related]
 		int numWaypoints;				// 0x314
 		int a2;							// 0x318 ** (Set in SetWaypoints to unknown parameter, used in IssuePatrol)
-		WayPoint wayPointList[8];		// 0x31C
+		Waypoint waypointList[8];		// 0x31C
 		int patrolMode;					// 0x33C (Initialized to 0)
 		int followMode;					// 0x340 (Initialized to 0)
 		Rect pixelRect;					// 0x344 (SetRect converted to pixels) (rect.p1.y initialized to -1)

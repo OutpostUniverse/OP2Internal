@@ -6,8 +6,8 @@
 
 #include "CommandPacket.h"
 #include "UnitGroup.h"
-#include "GameStartInfo\MoraleStartInfo.h"
-#include "GameStartInfo\PlayerStartInfo.h"
+#include "GameStartInfo/MoraleStartInfo.h"
+#include "GameStartInfo/PlayerStartInfo.h"
 
 
 namespace OP2Internal

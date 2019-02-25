@@ -5,7 +5,7 @@
 #define PrtGraphics_H
 
 
-#include "..\PointTypes.h"
+#include "../PointTypes.h"
 
 
 namespace OP2Internal

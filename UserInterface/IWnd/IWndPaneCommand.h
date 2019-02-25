@@ -4,7 +4,7 @@
 
 
 #include "IWndPane.h"
-#include "..\UIElement\UIElementButtonGraphicalButtonViewButton.h"
+#include "../UIElement/UIElementButtonGraphicalButtonViewButton.h"
 
 
 namespace OP2Internal

@@ -4,7 +4,7 @@
 #define IWnd_H
 
 
-#include "..\..\WinTypes.h"
+#include "../../WinTypes.h"
 
 
 namespace OP2Internal

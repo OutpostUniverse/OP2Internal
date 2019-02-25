@@ -114,7 +114,7 @@
     <ClInclude Include="Game\Unit\UnitBuilding.h" />
     <ClInclude Include="Game\Unit\UnitVehicle.h" />
     <ClInclude Include="Game\Unit\UnitWeapon.h" />
-    <ClInclude Include="Game\WayPoint.h" />
+    <ClInclude Include="Game\Waypoint.h" />
     <ClInclude Include="Network\GurManager.h" />
     <ClInclude Include="Network\NetGameProtocol.h" />
     <ClInclude Include="Network\NetTransportLayer.h" />
