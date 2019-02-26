@@ -45,19 +45,14 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
     </ClCompile>
-    <CustomBuild>
-      <Command>"%ProgramFiles%\NASM\nasm" -fwin32 "%(FullPath)" -o $(INTDIR)OP2Internal.obj</Command>
-	  <Message>Build asm file using nasm</Message>
-	  <TreatOutputAsContent>true</TreatOutputAsContent>
-      <Outputs>$(INTDIR)OP2Internal.obj</Outputs>
-    </CustomBuild>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+  <ItemDefinitionGroup>
     <CustomBuild>
-      <Command>"%ProgramFiles%\NASM\nasm" -fwin32 "%(FullPath)" -o $(INTDIR)OP2Internal.obj</Command>
+      <Command>nasm -f win32 -o "$(TargetPath)" "%(FullPath)"</Command>
+      <Inputs>%(FullPath)</Inputs>
+      <Outputs>$(IntDir)%(Filename).obj</Outputs>
       <Message>Build ASM File</Message>
       <TreatOutputAsContent>true</TreatOutputAsContent>
-      <Outputs>$(INTDIR)OP2Internal.obj</Outputs>
     </CustomBuild>
   </ItemDefinitionGroup>
   <ItemGroup>
