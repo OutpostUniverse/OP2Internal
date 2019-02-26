@@ -48,6 +48,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup>
     <CustomBuild>
+      <Message>nasm -f win32 -o "$(TargetPath)" "%(FullPath)"</Message>
       <Command>nasm -f win32 -o "$(TargetPath)" "%(FullPath)"</Command>
       <Inputs>%(FullPath)</Inputs>
       <Outputs>$(IntDir)%(Filename).obj</Outputs>
