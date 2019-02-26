@@ -51,7 +51,6 @@
       <Command>nasm -f win32 -o "$(TargetPath)" "%(FullPath)"</Command>
       <Inputs>%(FullPath)</Inputs>
       <Outputs>$(IntDir)%(Filename).obj</Outputs>
-      <Message>Build ASM File</Message>
       <TreatOutputAsContent>true</TreatOutputAsContent>
     </CustomBuild>
   </ItemDefinitionGroup>
