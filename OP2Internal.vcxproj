@@ -52,7 +52,6 @@
       <Command>nasm -f win32 -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
       <Inputs>%(FullPath)</Inputs>
       <Outputs>$(IntDir)%(Filename).obj</Outputs>
-      <TreatOutputAsContent>true</TreatOutputAsContent>
     </CustomBuild>
   </ItemDefinitionGroup>
   <ItemGroup>
