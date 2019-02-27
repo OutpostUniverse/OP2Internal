@@ -385,7 +385,7 @@ Export 0x0047C380, ?GetPlayerName@OP2Internal@@YIXPAD_N@Z
 ; TApp
 ; ----
 ; Member functions
-Export 0x00487E30, ?NetShutdown@TApp@OP2Internal@@QAEHH@Z
+Export 0x00487E30, ?NetShutdown@TApp@OP2Internal@@QAEXH@Z
 
 
 
