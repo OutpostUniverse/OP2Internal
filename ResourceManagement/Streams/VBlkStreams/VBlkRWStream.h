@@ -1,7 +1,6 @@
 
 
-#ifndef VBlkRWStream_H
-#define VBlkRWStream_H
+#pragma once
 
 
 #include "../StreamIOBaseVBlkRWStream.h"
@@ -52,6 +51,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

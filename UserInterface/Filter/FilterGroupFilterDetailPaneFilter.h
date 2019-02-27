@@ -1,7 +1,6 @@
 
 
-#ifndef FilterGroupFilterDetailPaneFilter_H
-#define FilterGroupFilterDetailPaneFilter_H
+#pragma once
 
 
 #include "FilterGroupFilter.h"
@@ -29,6 +28,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

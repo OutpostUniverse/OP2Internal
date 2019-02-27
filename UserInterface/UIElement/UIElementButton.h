@@ -1,6 +1,5 @@
 
-#ifndef UIElementButton_H
-#define UIElementButton_H
+#pragma once
 
 
 #include "UIElement.h"
@@ -44,6 +43,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

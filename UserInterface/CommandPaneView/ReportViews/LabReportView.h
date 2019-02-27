@@ -1,7 +1,6 @@
 
 
-#ifndef LabReportView_H
-#define LabReportView_H
+#pragma once
 
 
 #include "../ReportView.h"
@@ -41,6 +40,3 @@ namespace OP2Internal
 	extern LabReportView labReportView;		// 0x568E88
 
 }	// End namespace
-
-
-#endif

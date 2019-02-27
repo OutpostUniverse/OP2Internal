@@ -1,7 +1,6 @@
 
 
-#ifndef NetGameProtocol_H
-#define NetGameProtocol_H
+#pragma once
 
 
 namespace OP2Internal
@@ -46,6 +45,3 @@ namespace OP2Internal
 	//  4:  6 = SIGS
 
 }	// End namespace
-
-
-#endif

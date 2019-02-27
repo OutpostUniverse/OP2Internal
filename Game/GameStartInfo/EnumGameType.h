@@ -1,7 +1,6 @@
 
 
-#ifndef EnumGameType_H
-#define EnumGameType_H
+#pragma once
 
 
 namespace OP2Internal
@@ -21,6 +20,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

@@ -1,7 +1,6 @@
 
 
-#ifndef FactoryReportView_H
-#define FactoryReportView_H
+#pragma once
 
 
 #include "../ReportView.h"
@@ -50,6 +49,3 @@ namespace OP2Internal
 	extern FactoryReportView factoryReportView;		// 0x566408
 
 }	// End namespace
-
-
-#endif

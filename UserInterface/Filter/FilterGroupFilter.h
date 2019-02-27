@@ -1,7 +1,6 @@
 
 
-#ifndef FilterGroupFilter_H
-#define FilterGroupFilter_H
+#pragma once
 
 
 #include "Filter.h"
@@ -35,6 +34,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

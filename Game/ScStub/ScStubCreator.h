@@ -1,13 +1,9 @@
 // ** Note: This file needs a lot of work
 
 
-#ifndef ScStubCreator_H
-#define ScStubCreator_H
+#pragma once
 
 
 namespace OP2Internal
 {
 }	// End namespace
-
-
-#endif

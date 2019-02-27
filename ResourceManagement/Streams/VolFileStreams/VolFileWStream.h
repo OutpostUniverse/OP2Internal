@@ -1,7 +1,6 @@
 
 
-#ifndef VolFileWStream_H
-#define VolFileWStream_H
+#pragma once
 
 
 #include "../StreamIOBaseVolFileStream.h"
@@ -82,6 +81,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

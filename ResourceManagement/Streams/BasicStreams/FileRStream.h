@@ -1,7 +1,6 @@
 
 
-#ifndef FileRStream_H
-#define FileRStream_H
+#pragma once
 
 
 #include "../StreamIO.h"
@@ -57,6 +56,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

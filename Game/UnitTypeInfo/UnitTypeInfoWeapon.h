@@ -1,7 +1,6 @@
 
 
-#ifndef UnitTypeInfoWeapon_H
-#define UnitTypeInfoWeapon_H
+#pragma once
 
 
 #include "UnitTypeInfo.h"
@@ -41,6 +40,3 @@ namespace OP2Internal
 	};
 */
 }	// End namespace
-
-
-#endif

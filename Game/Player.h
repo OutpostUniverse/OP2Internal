@@ -1,7 +1,6 @@
 
 
-#ifndef Player_H
-#define Player_H
+#pragma once
 
 
 #include "CommandPacket.h"
@@ -145,4 +144,4 @@ namespace OP2Internal
 }	// End namespace
 
 
-#endif		// End redefinition error protection
+		// End redefinition error protection

@@ -1,7 +1,6 @@
 
 
-#ifndef LZHRStream_H
-#define LZHRStream_H
+#pragma once
 
 
 #include "../StreamIO.h"
@@ -58,6 +57,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

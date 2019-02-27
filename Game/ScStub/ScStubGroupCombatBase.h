@@ -1,8 +1,7 @@
 // ** Note: This file needs a lot of work
 
 
-#ifndef ScStubGroupCombatBase_H
-#define ScStubGroupCombatBase_H
+#pragma once
 
 
 #include "ScStubGroup.h"
@@ -52,6 +51,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

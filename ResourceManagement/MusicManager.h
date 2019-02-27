@@ -1,7 +1,6 @@
 
 
-#ifndef MusicManager_H
-#define MusicManager_H
+#pragma once
 
 
 #define WIN32_LEAN_AND_MEAN
@@ -78,6 +77,3 @@ namespace OP2Internal
 	extern char* songNameTable[26];		// 0x4E2700
 
 }	// End namespace
-
-
-#endif

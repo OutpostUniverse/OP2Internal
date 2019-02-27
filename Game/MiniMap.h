@@ -1,7 +1,6 @@
 
 
-#ifndef MiniMap_H
-#define MiniMap_H
+#pragma once
 
 
 #include "../PointTypes.h"
@@ -47,6 +46,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

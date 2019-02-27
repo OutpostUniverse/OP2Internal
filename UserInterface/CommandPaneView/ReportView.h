@@ -1,7 +1,6 @@
 
 
-#ifndef ReportView_H
-#define ReportView_H
+#pragma once
 
 
 #include "CommandPaneView.h"
@@ -36,6 +35,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

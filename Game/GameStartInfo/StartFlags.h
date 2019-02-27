@@ -1,7 +1,6 @@
 
 
-#ifndef StartFlags_H
-#define StartFlags_H
+#pragma once
 
 
 namespace OP2Internal
@@ -28,6 +27,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

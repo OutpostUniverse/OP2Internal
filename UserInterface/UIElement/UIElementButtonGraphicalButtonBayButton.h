@@ -1,7 +1,6 @@
 
 
-#ifndef UIElementButtonGraphicalButtonBayButton_H
-#define UIElementButtonGraphicalButtonBayButton_H
+#pragma once
 
 
 #include "UIElementButtonGraphicalButton.h"
@@ -49,6 +48,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

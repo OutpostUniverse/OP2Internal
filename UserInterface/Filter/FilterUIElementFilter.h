@@ -1,7 +1,6 @@
 
 
-#ifndef FilterUIElementFilter_H
-#define FilterUIElementFilter_H
+#pragma once
 
 
 #include "Filter.h"
@@ -35,6 +34,3 @@ namespace OP2Internal
 	extern UIElementFilter controlFilter;
 
 }	// End namespace
-
-
-#endif

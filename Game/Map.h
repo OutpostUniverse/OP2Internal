@@ -1,7 +1,6 @@
 
 
-#ifndef Map_H
-#define Map_H
+#pragma once
 
 
 #include "../PointTypes.h"
@@ -90,6 +89,3 @@ namespace OP2Internal
 	extern CellTypeInfo cellTypeInfo[32];	// 0x4DEBA8
 
 }	// End namespace
-
-
-#endif

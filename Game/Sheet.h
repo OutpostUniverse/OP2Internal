@@ -1,8 +1,7 @@
 // ** Note: This file needs a lot of work
 
 
-#ifndef Sheet_H
-#define Sheet_H
+#pragma once
 
 
 namespace OP2Internal
@@ -178,6 +177,3 @@ namespace OP2Internal
 	extern Sheet &sheet;// = *(Sheet*)0x0055B780;		// 0x0055B780
 
 }	// End namespace
-
-
-#endif

@@ -1,4 +1,4 @@
-
+#pragma once
 // OP2Internal.h
 // ---------------
 // Master include file for this API. This includes everything.
@@ -6,10 +6,6 @@
 // You can also selectively include just the headers you want.
 // Selective inclusion will allow for a slightly faster compile
 // time, and a possibly cleaner namespace (for IntelliSense maybe?).
-
-
-#ifndef OP2Internal_H
-#define OP2Internal_H
 
 
 // Used for sanity checking in DLLMain
@@ -160,6 +156,3 @@ namespace OP2Internal
 
 
 }	// End namespace
-
-
-#endif

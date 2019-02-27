@@ -1,7 +1,6 @@
 
 
-#ifndef NetTransportLayer_H
-#define NetTransportLayer_H
+#pragma once
 
 
 namespace OP2Internal
@@ -49,6 +48,3 @@ namespace OP2Internal
 	extern GUID gameIdentifier;
 
 }	// End namespace
-
-
-#endif

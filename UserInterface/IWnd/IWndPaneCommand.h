@@ -1,6 +1,5 @@
 
-#ifndef IWnd_Pane_Command_H
-#define IWnd_Pane_Command_H
+#pragma once
 
 
 #include "IWndPane.h"
@@ -70,6 +69,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

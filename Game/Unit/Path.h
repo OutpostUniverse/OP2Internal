@@ -1,7 +1,6 @@
 
 
-#ifndef Path_H
-#define Path_H
+#pragma once
 
 
 #include "../Waypoint.h"
@@ -51,6 +50,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

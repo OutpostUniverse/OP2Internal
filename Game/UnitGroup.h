@@ -1,7 +1,6 @@
 
 
-#ifndef UnitGroup_H
-#define UnitGroup_H
+#pragma once
 
 
 namespace OP2Internal
@@ -34,5 +33,3 @@ namespace OP2Internal
 	extern UnitGroup selectedUnits;		// 0x547210
 
 }	// End namespace
-
-#endif

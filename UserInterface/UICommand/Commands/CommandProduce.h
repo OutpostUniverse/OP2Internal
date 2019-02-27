@@ -1,7 +1,6 @@
 
 
-#ifndef CommandProduce_H
-#define CommandProduce_H
+#pragma once
 
 
 #include "../UICommand.h"
@@ -35,6 +34,3 @@ namespace OP2Internal
 	extern CommandProduce commandProduce;		// 0x565680
 
 }	// End namespace
-
-
-#endif

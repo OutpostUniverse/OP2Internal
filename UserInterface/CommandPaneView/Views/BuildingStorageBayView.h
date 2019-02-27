@@ -1,7 +1,6 @@
 
 
-#ifndef BuildingStorageBayView_H
-#define BuildingStorageBayView_H
+#pragma once
 
 
 #include "../CommandPaneView.h"
@@ -36,6 +35,3 @@ namespace OP2Internal
 	extern BuildingStorageBayView buildingStorageBayView;	// 0x565D30
 
 }	// End namespace
-
-
-#endif

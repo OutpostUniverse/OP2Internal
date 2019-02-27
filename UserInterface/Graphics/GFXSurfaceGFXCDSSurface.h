@@ -1,7 +1,6 @@
 
 
-#ifndef GFXSurfaceGFXCDSSurface_H
-#define GFXSurfaceGFXCDSSurface_H
+#pragma once
 
 
 #include "GFXSurface.h"
@@ -52,6 +51,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

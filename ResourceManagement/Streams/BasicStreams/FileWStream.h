@@ -1,7 +1,6 @@
 
 
-#ifndef FileWStream_H
-#define FileWStream_H
+#pragma once
 
 
 #include "../StreamIO.h"
@@ -53,6 +52,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

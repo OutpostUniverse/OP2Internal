@@ -1,7 +1,6 @@
 
 
-#ifndef TethysGame_H
-#define TethysGame_H
+#pragma once
 
 
 #include "GameOpt.h"
@@ -81,4 +80,4 @@ namespace OP2Internal
 }	// End namespace
 
 
-#endif	// End Include Guard
+	// End Include Guard

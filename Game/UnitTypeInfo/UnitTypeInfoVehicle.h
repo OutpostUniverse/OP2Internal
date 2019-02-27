@@ -1,7 +1,6 @@
 
 
-#ifndef UnitTypeInfoVehicle_H
-#define UnitTypeInfoVehicle_H
+#pragma once
 
 
 #include "UnitTypeInfo.h"
@@ -25,6 +24,3 @@ namespace OP2Internal
 	};
 */
 }	// End namespace
-
-
-#endif

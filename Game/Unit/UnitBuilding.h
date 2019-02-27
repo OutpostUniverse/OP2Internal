@@ -1,7 +1,6 @@
 
 
-#ifndef UnitBuilding_H
-#define UnitBuilding_H
+#pragma once
 
 
 #include "Unit.h"
@@ -80,6 +79,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

@@ -1,7 +1,6 @@
 
 
-#ifndef IWnd_H
-#define IWnd_H
+#pragma once
 
 
 #include "../../WinTypes.h"
@@ -51,6 +50,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

@@ -1,7 +1,6 @@
 
 
-#ifndef CommandBuild_H
-#define CommandBuild_H
+#pragma once
 
 
 #include "../UICommandMouseCommand.h"
@@ -44,6 +43,3 @@ namespace OP2Internal
 	extern CommandBuild commandBuild;		// 0x5655B4
 
 }	// End namespace
-
-
-#endif

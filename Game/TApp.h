@@ -1,7 +1,6 @@
 
 
-#ifndef TApp_H
-#define TApp_H
+#pragma once
 
 
 #include <winuser.h>
@@ -71,6 +70,3 @@ namespace OP2Internal
 	extern TApp app;			// 0x0056E868
 
 }	// End namespace
-
-
-#endif

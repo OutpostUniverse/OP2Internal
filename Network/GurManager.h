@@ -1,7 +1,6 @@
 
 
-#ifndef GurManager_H
-#define GurManager_H
+#pragma once
 
 
 #include "Packet.h"
@@ -68,6 +67,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

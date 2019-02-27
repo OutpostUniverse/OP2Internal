@@ -1,7 +1,6 @@
 
 
-#ifndef IWnd_IDlgWnd_MessageBoxWnd_H
-#define IWnd_IDlgWnd_MessageBoxWnd_H
+#pragma once
 
 
 #include "IWndIDlgWnd.h"
@@ -39,6 +38,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

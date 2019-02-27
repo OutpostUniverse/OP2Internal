@@ -1,14 +1,10 @@
 // ** Note: This file needs a lot of work
 
 
-#ifndef Morale_H
-#define Morale_H
+#pragma once
 
 
 namespace OP2Internal
 {
 
 }	// End namespace
-
-
-#endif

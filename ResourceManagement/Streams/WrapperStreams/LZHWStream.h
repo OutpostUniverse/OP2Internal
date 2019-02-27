@@ -1,7 +1,6 @@
 
 
-#ifndef LZHWStream_H
-#define LZHWStream_H
+#pragma once
 
 
 #include "../StreamIO.h"
@@ -67,6 +66,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif
