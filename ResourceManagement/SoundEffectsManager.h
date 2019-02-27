@@ -1,7 +1,7 @@
-// ** Note: This file is far from finished
-
-
 #pragma once
+
+
+// ** Note: This file is far from finished
 
 
 struct DirectSoundBuffer;

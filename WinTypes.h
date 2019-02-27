@@ -1,7 +1,7 @@
-// Win32 data types, compatable with windows.h, but doesn't require windows.h
-
-
 #pragma once
+
+
+// Win32 data types, compatable with windows.h, but doesn't require windows.h
 
 
 typedef long LONG;
