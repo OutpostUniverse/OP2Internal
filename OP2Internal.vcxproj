@@ -46,11 +46,19 @@
       <Optimization>Disabled</Optimization>
     </ClCompile>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <CustomBuild>
+      <Message>nasm -f win32 -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Message>
+      <Command>nasm -f win32 -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Inputs>%(FullPath)</Inputs>
+      <Outputs>$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DummyMain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="OP2Internal.asm" />
+    <CustomBuild Include="OP2Internal.asm"/>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OP2Internal.h" />

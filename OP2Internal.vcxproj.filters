@@ -428,6 +428,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="OP2Internal.asm" />
+    <CustomBuild Include="OP2Internal.asm" />
   </ItemGroup>
 </Project>
