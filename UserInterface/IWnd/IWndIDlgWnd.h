@@ -1,7 +1,4 @@
-
-
-#ifndef IWnd_IDlgWnd_H
-#define IWnd_IDlgWnd_H
+#pragma once
 
 
 #include "IWnd.h"
@@ -59,6 +56,3 @@ namespace OP2Internal
 	int __fastcall MsgBox(HWND hOwnerWnd, const char* message, const char* title, int flags);	// 0x0041E0E0
 
 }	// End namespace
-
-
-#endif

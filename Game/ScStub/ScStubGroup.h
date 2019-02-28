@@ -1,5 +1,4 @@
-#ifndef ScStubGroup_H
-#define ScStubGroup_H
+#pragma once
 
 #include "ScStub.h"
 
@@ -74,6 +73,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

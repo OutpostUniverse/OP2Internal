@@ -1,7 +1,4 @@
-
-
-#ifndef EnumActionType_H
-#define EnumActionType_H
+#pragma once
 
 
 namespace OP2Internal
@@ -32,6 +29,3 @@ namespace OP2Internal
 		moInvalid			= 0x16,
 	};
 }	// End namespace
-
-
-#endif

@@ -1,7 +1,4 @@
-
-
-#ifndef UIElementButtonGraphicalButtonViewButtonReportPageButton_H
-#define UIElementButtonGraphicalButtonViewButtonReportPageButton_H
+#pragma once
 
 
 #include "UIElementButtonGraphicalButtonViewButton.h"
@@ -53,6 +50,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

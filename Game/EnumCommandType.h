@@ -1,6 +1,4 @@
-
-#ifndef EnumCommandType_H
-#define EnumCommandType_H
+#pragma once
 
 
 namespace OP2Internal
@@ -64,6 +62,3 @@ namespace OP2Internal
 		WeaponFiring		= 0x36,
 	};
 }	// End namespace
-
-
-#endif

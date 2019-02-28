@@ -1,7 +1,4 @@
-
-
-#ifndef UnitTypeInfoBuilding_H
-#define UnitTypeInfoBuilding_H
+#pragma once
 
 
 #include "UnitTypeInfo.h"
@@ -28,6 +25,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

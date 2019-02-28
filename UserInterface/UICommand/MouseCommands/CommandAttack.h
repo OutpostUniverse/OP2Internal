@@ -1,7 +1,4 @@
-
-
-#ifndef CommandAttack_H
-#define CommandAttack_H
+#pragma once
 
 
 #include "../UICommandMouseCommand.h"
@@ -46,6 +43,3 @@ namespace OP2Internal
 	extern CommandAttack commandAttack;		// 0x56560C
 
 }	// End namespace
-
-
-#endif

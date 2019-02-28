@@ -1,7 +1,4 @@
-
-
-#ifndef GameStartInfo_H
-#define GameStartInfo_H
+#pragma once
 
 
 #include "EnumGameType.h"
@@ -51,6 +48,3 @@ namespace OP2Internal
 	#pragma pack(pop)
 
 }	// End namespace
-
-
-#endif

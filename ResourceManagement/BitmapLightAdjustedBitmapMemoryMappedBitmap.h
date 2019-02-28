@@ -1,7 +1,4 @@
-
-
-#ifndef BitmapLightAdjustedBitmapMemoryMappedBitmap_H
-#define BitmapLightAdjustedBitmapMemoryMappedBitmap_H
+#pragma once
 
 
 #include "BitmapLightAdjustedBitmap.h"
@@ -57,6 +54,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

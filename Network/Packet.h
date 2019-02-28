@@ -1,7 +1,4 @@
-
-
-#ifndef Packet_H
-#define Packet_H
+#pragma once
 
 
 // Bring in definitions of structs: GUID, sockaddr_in
@@ -247,6 +244,3 @@ namespace OP2Internal
 	#pragma pack(pop)
 
 }	// End namespace
-
-
-#endif

@@ -1,7 +1,4 @@
-
-
-#ifndef UnitVehicle_H
-#define UnitVehicle_H
+#pragma once
 
 
 #include "Unit.h"
@@ -47,6 +44,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

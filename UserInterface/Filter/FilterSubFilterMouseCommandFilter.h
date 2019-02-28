@@ -1,7 +1,4 @@
-
-
-#ifndef FilterSubFilterMouseCommandFilter_H
-#define FilterSubFilterMouseCommandFilter_H
+#pragma once
 
 
 #include "FilterSubFilter.h"
@@ -96,6 +93,3 @@ namespace OP2Internal
 	// 0, 0, 1, 1	(LaunchDest), (CPV[Building]/[Vehicle].OnRemoveView), (???), (OnUnitSelectionChange), (CPV[StorageBay]/[TrainScientists].OnSetupDisplay), (CPVReport[Factory]/[Resources].???), (CPVReport[GameOptions]/[Communications]/[NetStats]/[BuildList]/[VehicleList]/[Lab]/[ResearchList]/[Satellite].OnAddView)
 
 }	// End namespace
-
-
-#endif

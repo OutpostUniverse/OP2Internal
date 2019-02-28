@@ -1,7 +1,4 @@
-
-
-#ifndef IWndTFrameDans_RULE_UIFrame_H
-#define IWndTFrameDans_RULE_UIFrame_H
+#pragma once
 
 
 #define WIN32_LEAN_AND_MEAN
@@ -118,6 +115,3 @@ namespace OP2Internal
 	extern Dans_RULE_UIFrame dansFrame;	// 0x5756C0
 
 }	// End namespace
-
-
-#endif

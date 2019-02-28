@@ -1,7 +1,4 @@
-
-
-#ifndef UnitView_H
-#define UnitView_H
+#pragma once
 
 
 #include "../CommandPaneView.h"
@@ -31,6 +28,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

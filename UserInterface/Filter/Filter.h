@@ -1,7 +1,4 @@
-
-
-#ifndef Filter_H
-#define Filter_H
+#pragma once
 
 
 #include "../../WinTypes.h"
@@ -44,6 +41,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

@@ -1,7 +1,4 @@
-
-
-#ifndef Waypoint_H
-#define Waypoint_H
+#pragma once
 
 
 namespace OP2Internal
@@ -12,6 +9,3 @@ namespace OP2Internal
 		unsigned int pixelY:14;
 	};
 }	// End namespace
-
-
-#endif

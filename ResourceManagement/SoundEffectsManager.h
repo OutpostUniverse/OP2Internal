@@ -1,8 +1,7 @@
+#pragma once
+
+
 // ** Note: This file is far from finished
-
-
-#ifndef SoundEffectsManager_H
-#define SoundEffectsManager_H
 
 
 struct DirectSoundBuffer;
@@ -81,6 +80,3 @@ namespace OP2Internal
 	extern char* soundEffectsFileNameTable[252];		// 0x4E0170
 
 }	// End namespace
-
-
-#endif

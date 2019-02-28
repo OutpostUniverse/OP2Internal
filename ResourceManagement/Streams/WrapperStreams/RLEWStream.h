@@ -1,7 +1,4 @@
-
-
-#ifndef RLEWStream_H
-#define RLEWStream_H
+#pragma once
 
 
 #include "../StreamIO.h"
@@ -54,6 +51,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

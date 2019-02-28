@@ -1,8 +1,7 @@
+#pragma once
+
+
 // ** Note: This file needs a lot of work
-
-
-#ifndef ScStubGroupBuildGroup_H
-#define ScStubGroupBuildGroup_H
 
 
 #include "ScStubGroup.h"
@@ -79,6 +78,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

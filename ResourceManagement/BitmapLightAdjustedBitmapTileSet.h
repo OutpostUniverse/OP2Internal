@@ -1,7 +1,4 @@
-
-
-#ifndef BitmapLightAdjustedBitmapTileSet_H
-#define BitmapLightAdjustedBitmapTileSet_H
+#pragma once
 
 
 #include "BitmapLightAdjustedBitmap.h"
@@ -67,6 +64,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

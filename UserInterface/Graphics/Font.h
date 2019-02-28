@@ -1,7 +1,4 @@
-
-
-#ifndef Font_H
-#define Font_H
+#pragma once
 
 
 #include <windef.h>
@@ -140,6 +137,3 @@ namespace OP2Internal
 // 0x14	4	int gmBlackBoxY
 // 0x18	4	int bufferIndex	[init: bufferSize return value]
 // ------------
-
-
-#endif

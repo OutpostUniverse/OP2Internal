@@ -1,7 +1,4 @@
-
-
-#ifndef IWndTFrame_H
-#define IWndTFrame_H
+#pragma once
 
 
 #include "IWnd.h"
@@ -55,6 +52,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

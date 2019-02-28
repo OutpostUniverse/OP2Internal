@@ -1,8 +1,7 @@
+#pragma once
+
+
 // Win32 data types, compatable with windows.h, but doesn't require windows.h
-
-
-#ifndef BasicTypes_H
-#define BasicTypes_H
 
 
 typedef long LONG;
@@ -30,6 +29,3 @@ MakeHandleType(HBITMAP);
 MakeHandleType(HPALETTE);
 
 typedef HICON HCURSOR;
-
-
-#endif

@@ -1,7 +1,4 @@
-
-
-#ifndef GameOpt_H
-#define GameOpt_H
+#pragma once
 
 
 namespace OP2Internal
@@ -122,6 +119,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

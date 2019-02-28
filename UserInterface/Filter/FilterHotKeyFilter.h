@@ -1,7 +1,4 @@
-
-
-#ifndef FilterHotKeyFilter_H
-#define FilterHotKeyFilter_H
+#pragma once
 
 
 #include "Filter.h"
@@ -39,6 +36,3 @@ namespace OP2Internal
 	extern HotKeyFilter hotKeyFilter;
 
 }	// End namespace
-
-
-#endif

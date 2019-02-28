@@ -1,8 +1,7 @@
+#pragma once
+
+
 // ** Note: This file needs a lot of work
-
-
-#ifndef CommandPacket_H
-#define CommandPacket_H
 
 
 #include "Waypoint.h"
@@ -319,6 +318,3 @@ namespace OP2Internal
 
 	#pragma pack(pop)
 }	// End namespace
-
-
-#endif

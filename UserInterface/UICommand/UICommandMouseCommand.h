@@ -1,7 +1,4 @@
-
-
-#ifndef UICommandMouseCommand_H
-#define UICommandMouseCommand_H
+#pragma once
 
 
 #include "UICommand.h"
@@ -88,6 +85,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

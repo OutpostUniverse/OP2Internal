@@ -1,7 +1,4 @@
-
-
-#ifndef UIElementListBox_H
-#define UIElementListBox_H
+#pragma once
 
 
 #include "UIElement.h"
@@ -124,6 +121,3 @@ namespace OP2Internal
 
 
 }	// End namespace
-
-
-#endif

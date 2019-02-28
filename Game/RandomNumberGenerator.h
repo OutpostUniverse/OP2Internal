@@ -1,7 +1,4 @@
-
-
-#ifndef RandomNumberGenerator_H
-#define RandomNumberGenerator_H
+#pragma once
 
 
 #include "../WinTypes.h"
@@ -32,6 +29,3 @@ namespace OP2Internal
 	extern RandomNumberGenerator thorsNumGen;	// 0x574428
 
 }	// End namespace
-
-
-#endif

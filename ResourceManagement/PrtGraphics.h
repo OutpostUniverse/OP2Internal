@@ -1,8 +1,7 @@
+#pragma once
+
+
 // ** Note: This file needs a lot of work
-
-
-#ifndef PrtGraphics_H
-#define PrtGraphics_H
 
 
 #include "../PointTypes.h"
@@ -87,6 +86,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

@@ -1,7 +1,4 @@
-
-
-#ifndef CConfig_H
-#define CConfig_H
+#pragma once
 
 
 namespace OP2Internal
@@ -41,6 +38,3 @@ namespace OP2Internal
 	extern CConfig config;		// 0x00547090
 
 }	// End namespace
-
-
-#endif

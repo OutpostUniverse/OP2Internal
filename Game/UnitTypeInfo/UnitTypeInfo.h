@@ -1,7 +1,4 @@
-
-
-#ifndef UnitTypeInfo_H
-#define UnitTypeInfo_H
+#pragma once
 
 
 namespace OP2Internal
@@ -114,6 +111,3 @@ namespace OP2Internal
 	extern UnitTypeInfo* unitTypeInfo[0x73];		// 0x4E1348  [0x73 = mapUnitLast = mapGeneralUnit]
 
 }	// End namespace
-
-
-#endif

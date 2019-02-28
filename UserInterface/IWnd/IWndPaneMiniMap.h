@@ -1,7 +1,4 @@
-
-
-#ifndef IWnd_Pane_MiniMap_H
-#define IWnd_Pane_MiniMap_H
+#pragma once
 
 
 #include "IWndPane.h"
@@ -64,6 +61,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

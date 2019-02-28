@@ -1,5 +1,4 @@
-#ifndef ScStubGroupMineGroup_H
-#define ScStubGroupMineGroup_H
+#pragma once
 
 
 #include "ScStubGroup.h"
@@ -27,6 +26,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

@@ -1,7 +1,4 @@
-
-
-#ifndef GFXSurfaceGFXCDSSurfaceGFXClippedSurface_H
-#define GFXSurfaceGFXCDSSurfaceGFXClippedSurface_H
+#pragma once
 
 
 #define WIN32_LEAN_AND_MEAN
@@ -44,6 +41,3 @@ namespace OP2Internal
 	void __fastcall DrawHpBar(Rect* position, GFXClippedSurface* surface, int currentHp, int maxHp, short hpBarColor16, short hpBarBackgroundColor16, int a1, short a2Color16, int a3, short a4Color16);	// 0x45C3A0
 
 }	// End namespace
-
-
-#endif

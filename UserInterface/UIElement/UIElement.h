@@ -1,7 +1,4 @@
-
-
-#ifndef UIElement_H
-#define UIElement_H
+#pragma once
 
 
 #include "../../PointTypes.h"
@@ -54,6 +51,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

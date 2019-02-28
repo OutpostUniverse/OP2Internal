@@ -1,7 +1,4 @@
-
-
-#ifndef StreamIOBaseVolFileStream_H
-#define StreamIOBaseVolFileStream_H
+#pragma once
 
 
 #include "StreamIO.h"
@@ -97,6 +94,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

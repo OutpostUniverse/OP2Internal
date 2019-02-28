@@ -1,7 +1,4 @@
-
-
-#ifndef GFXSurface_H
-#define GFXSurface_H
+#pragma once
 
 
 #include "../../WinTypes.h"
@@ -61,6 +58,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

@@ -1,9 +1,8 @@
+#pragma once
+
+
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
-
-
-#ifndef Palette_H
-#define Palette_H
 
 
 namespace OP2Internal
@@ -74,6 +73,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif

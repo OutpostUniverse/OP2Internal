@@ -1,7 +1,4 @@
-
-
-#ifndef LevelDLL_H
-#define LevelDLL_H
+#pragma once
 
 
 namespace OP2Internal
@@ -53,6 +50,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-#endif
