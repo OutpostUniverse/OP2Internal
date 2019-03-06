@@ -5,6 +5,7 @@
 
 
 #include "Waypoint.h"
+#include "../AssertSize.h"
 
 
 namespace OP2Internal
@@ -125,6 +126,7 @@ namespace OP2Internal
 			short weaponType;			// 0x12 enum map_id
 			short scStubIndex;			// 0x14 -1 if not used
 		};
+		AssertSize(8, Produce);
 
 		struct TransferCargo
 		{
@@ -204,6 +206,7 @@ namespace OP2Internal
 			short tileY;
 			int weaponOrCargo;	// enum map_id
 		};
+		AssertSize(12, CreateUnitInfo);
 		struct Create
 		{
 			short numUnits;
