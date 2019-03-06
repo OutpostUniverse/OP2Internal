@@ -1,5 +1,7 @@
-Debug
-Release
+Debug/
+Release/
+.build/
+.vs/
 *.suo
 *.user
-.vs
+OP2Internal.lib
