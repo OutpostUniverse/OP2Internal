@@ -125,6 +125,7 @@ namespace OP2Internal
 			short weaponType;			// 0x12 enum map_id
 			short scStubIndex;			// 0x14 -1 if not used
 		};
+		static_assert(8 == sizeof(Produce), "Unexpected struct size");
 
 		struct TransferCargo
 		{
@@ -204,6 +205,7 @@ namespace OP2Internal
 			short tileY;
 			int weaponOrCargo;	// enum map_id
 		};
+		static_assert(12 == sizeof(CreateUnitInfo), "Unexpected struct size");
 		struct Create
 		{
 			short numUnits;
