@@ -95,7 +95,7 @@ namespace OP2Internal
 		char command;					// 0x21 
 		char action;					// 0x22 
 		char executingAction;			// 0x23 
-		short cargo;					// 0x24 [enum map_id]
+		map_id cargo;					// 0x24
 		short attackingUnitIndex;		// 0x26 
 		int lastAttackedTick;			// 0x28 (Valid when (gameTick - lastAttackedTick) < 30)
 		short unitTypeInstanceNum;		// 0x2C

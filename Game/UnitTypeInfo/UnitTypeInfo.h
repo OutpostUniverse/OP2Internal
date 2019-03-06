@@ -6,7 +6,7 @@ namespace OP2Internal
 
 	class Unit;
 	class StreamIO;
-	enum map_id;
+	enum class map_id : short;
 
 
 	enum BuildingAnimationTypeIndex
@@ -97,7 +97,7 @@ namespace OP2Internal
 		// Member variables
 		// ----
 		// vtbl								// 0x0
-		map_id unitType;					// 0x4
+		map_id unitType;					// 0x4  (Note: This field is padded to 4 bytes for alignment of next field)
 		PlayerUnitInfo playerInfo[7];		// 0x8
 		int requiredTechIndex;				// 0x1E4
 		int trackType;						// 0x1E8

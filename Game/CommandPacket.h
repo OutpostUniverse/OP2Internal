@@ -9,6 +9,7 @@
 
 namespace OP2Internal
 {
+	enum class map_id : short;
 
 	#pragma pack(push, 1)
 	struct CommandPacketHeader
@@ -107,7 +108,7 @@ namespace OP2Internal
 			//UnitList
 			//WaypointList
 			ShortRect buildArea;
-			short tubeWallType;	// enum map_id
+			map_id tubeWallType;
 			short unknown;		// ** Might be scStubIndex (related to BuildGroup), set to 0 if not used
 		};
 
@@ -121,8 +122,8 @@ namespace OP2Internal
 		struct Produce
 		{
 			short factoryUnitIndex;		// 0x0E
-			short itemType;				// 0x10 enum map_id
-			short weaponType;			// 0x12 enum map_id
+			map_id itemType;				// 0x10
+			map_id weaponType;			// 0x12
 			short scStubIndex;			// 0x14 -1 if not used
 		};
 
@@ -204,6 +205,7 @@ namespace OP2Internal
 			short tileY;
 			int weaponOrCargo;	// enum map_id
 		};
+		static_assert(12 == sizeof(CreateUnitInfo), "Unexpected struct size");
 		struct Create
 		{
 			short numUnits;

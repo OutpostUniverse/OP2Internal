@@ -4,7 +4,7 @@
 
 
 enum class UnitClassifactions;
-enum class map_id;
+enum class map_id : short;
 
 
 namespace OP2Internal
