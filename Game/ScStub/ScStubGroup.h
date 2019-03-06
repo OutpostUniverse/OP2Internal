@@ -3,8 +3,8 @@
 #include "ScStub.h"
 
 
-enum UnitClassifactions;
-enum map_id;
+enum class UnitClassifactions;
+enum class map_id;
 
 
 namespace OP2Internal

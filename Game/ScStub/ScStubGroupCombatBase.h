@@ -9,7 +9,7 @@
 #include "../../PointTypes.h"
 
 
-enum map_id;
+enum class map_id;
 
 
 namespace OP2Internal

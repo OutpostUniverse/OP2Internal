@@ -6,13 +6,13 @@ namespace OP2Internal
 
 	class Filter;
 
-	enum FilterPositions
+	enum class FilterPositions
 	{
 		FilterPosLast = 0,
 		FilterPosFirst = 1,
 	};
 
-	enum FilterOptions
+	enum class FilterOptions
 	{
 		FilterOptMouseMessage = 1,
 		FilterOptKeyboardMessage = 2,

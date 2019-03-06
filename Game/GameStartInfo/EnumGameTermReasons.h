@@ -4,7 +4,7 @@
 namespace OP2Internal
 {
 
-	enum GameTermReasons
+	enum class GameTermReasons
 	{
 		GameTermRunning				= 0,	// Still running
 		

@@ -9,7 +9,7 @@
 namespace OP2Internal
 {
 
-	enum GameTermReasons;
+	enum class GameTermReasons;
 	class StreamIO;
 	class TFileDialog;
 	class GameNetLayer;

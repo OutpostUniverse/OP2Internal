@@ -10,7 +10,7 @@ namespace OP2Internal
 
 	class BoolState;
 	class Pane;
-	enum BehaviorType;
+	enum class BehaviorType;
 
 
 	class MouseCommandFilter : public SubFilter
@@ -64,7 +64,7 @@ namespace OP2Internal
 	};
 
 
-	enum BehaviorType
+	enum class BehaviorType
 	{
 		BandboxUnitSelect = 0,		// Left-clicking starts drawing a bandbox
 		SetRectRegion = 1,			// Bulldoze or Salvage region

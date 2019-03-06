@@ -7,7 +7,7 @@
 namespace OP2Internal
 {
 
-	enum map_id;
+	enum class map_id;
 	class Unit;
 
 
@@ -26,7 +26,7 @@ namespace OP2Internal
 	};
 
 
-	enum map_id {
+	enum class map_id {
 		mapAny = -1,					// FF Use to specify 'all' or 'any'
 		mapNone = 0,					// 00
 

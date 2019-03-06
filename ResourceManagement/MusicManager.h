@@ -10,7 +10,7 @@ struct DirectSoundBuffer;
 namespace OP2Internal
 {
 
-	enum SongIds;
+	enum class SongIds;
 
 
 	class MusicManager

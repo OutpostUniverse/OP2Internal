@@ -8,6 +8,8 @@ namespace OP2Internal
 {
 
 	class FilterNode;
+	enum class FilterPositions;
+	enum class FilterOptions;
 
 
 	// Size: 0x14
@@ -28,7 +30,7 @@ namespace OP2Internal
 		IWnd();
 		class IWnd & operator=(class IWnd const &);
 		class FilterNode * FindNode(class Filter *,int);
-		void InstallFilter(class Filter*, int userData, enum FilterPositions, enum FilterOptions);
+		void InstallFilter(class Filter*, int userData, FilterPositions filterPosition, FilterOptions filterOption);
 		void RemoveFilter(class Filter*, int userData);
 
 		// Static functions

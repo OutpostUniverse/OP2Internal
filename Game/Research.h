@@ -9,7 +9,7 @@ namespace OP2Internal
 	struct TechInfo;
 	struct TechUpgradeInfo;
 	struct UpgradeType;
-	enum TechCategory;
+	enum class TechCategory;
 
 
 	class Research
@@ -73,7 +73,7 @@ namespace OP2Internal
 
 
 	// "CATEGORY" values (for both items and upgrades to these items)
-	enum TechCategory
+	enum class TechCategory
 	{
 		tcFree,						// 0 = Free technologies (and unavailable technologies)
 		tcBasic,					// 1 = Basic labratory sciences
