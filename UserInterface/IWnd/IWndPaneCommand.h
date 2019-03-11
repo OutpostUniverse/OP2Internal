@@ -33,11 +33,15 @@ namespace OP2Internal
 		// virtual bool GetAbsolutePos(int pixelX, int pixelY, Point& absolutePos);
 
 		// [Pane] Virtual member functions
+		// Mark entire surface for redraw with: drawRect = nullptr
 		virtual void MarkRectToRedraw(Rect* drawRect);
+		// No operation if drawRect == nullptr
 		virtual void DrawBackBuffer(Rect* drawRect);
 
 		// Member functions
+		// Set control == nullptr to unselect current control
 		void SetSelectedControl(UIElement* control);
+		// Set newView == nullptr to unselect current view
 		void SetNewView(CommandPaneView* newView);
 		void DrawControlsAndUpdateScreen();
 		int  GetReportButtonHeight();
