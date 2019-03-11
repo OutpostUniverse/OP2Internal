@@ -28,8 +28,8 @@ namespace OP2Internal
 		virtual bool GetAbsolutePos(int pixelX, int pixelY, Point& absolutePos);
 
 		// [New] Virtual member functions
-		virtual void GetViewportRelativePos(int pixelX, int pixelY, Point& relPos);
-		virtual void GetViewportTilePositionAndSize(Point& topLeftTilePos, Point& tileSize);
+		virtual void GetViewportRelativePosition(int pixelX, int pixelY, Point& relPosInPixels);
+		virtual void GetViewportPositionInTiles(Point& topLeftTile, Point& bottomRightTile);
 
 		// Member functions
 		void GetViewCenter(Point& viewCenter);
