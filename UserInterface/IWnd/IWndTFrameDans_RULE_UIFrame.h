@@ -48,7 +48,7 @@ namespace OP2Internal
 		// ---------------------------------
 		virtual void ShutDown();
 		// Note: Insert 5 virtual members here
-		virtual void GetUIState(UIState* uiState);
+		virtual void GetUIState(UIState& uiState);
 		virtual void DoCommand(unsigned int controlId);
 		virtual void TranslateAccelerators(MSG* msg);
 		virtual void Init();
