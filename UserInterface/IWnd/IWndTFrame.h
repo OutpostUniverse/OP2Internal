@@ -31,13 +31,12 @@ namespace OP2Internal
 		void HandleMenuInit(HMENU, unsigned int,int);
 	public:
 		virtual ~TFrame();		// [Overridden]
-		// Note: Insert 5 virtual members here
+
 		virtual void GetUIState(UIState& uiState) = 0;
 		virtual void DoCommand(unsigned int controlId) = 0;
 		virtual void TranslateAccelerators(MSG* msg) = 0;
 		virtual void Init() = 0;
 		virtual void Initialize() = 0;
-		// Note: End extra 5 virtual members
 		virtual void Activate();
 		virtual void Deactivate();
 		virtual void OnIdle();
