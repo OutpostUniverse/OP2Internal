@@ -25,7 +25,7 @@ namespace OP2Internal
 		virtual void ReallocSurface(int zoom);
 		virtual void Draw();
 		// virtual void F1();
-		virtual bool GetAbsolutePos(int pixelX, int pixelY, Point* absolutePos);
+		virtual bool GetAbsolutePos(int pixelX, int pixelY, Point& absolutePos);
 
 		// [New] Virtual member functions
 		virtual void GetViewportRelativePos(int pixelX, int pixelY, Point* relPos);

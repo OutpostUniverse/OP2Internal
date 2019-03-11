@@ -31,13 +31,13 @@ namespace OP2Internal
 		virtual void ReallocSurface(int zoom);
 		virtual void Draw();
 		virtual void F1();							// **
-		virtual bool GetAbsolutePos(int pixelX, int pixelY, Point* absolutePos);
+		virtual bool GetAbsolutePos(int pixelX, int pixelY, Point& absolutePos);
 
 		// Member functions
-		void AddControl(UIElement* control);
-		void RemoveControl(UIElement* control);
+		void AddControl(UIElement& control);
+		void RemoveControl(UIElement& control);
 		void SetNumControls(int newNumControls);
-		UIElement* GetControlFromPos(int pixelX, int pixelY);
+		UIElement& GetControlFromPos(int pixelX, int pixelY);
 
 
 	public:
