@@ -32,8 +32,8 @@ namespace OP2Internal
 	public:
 		virtual ~TFrame();		// [Overridden]
 		// Note: Insert 5 virtual members here
-		virtual void TFrame_F1(UIState*) = 0;
-		virtual void TFrame_F2(unsigned int controlId) = 0;
+		virtual void GetUIState(UIState* uiState) = 0;
+		virtual void DoCommand(unsigned int controlId) = 0;
 		virtual void TranslateAccelerators(MSG* msg) = 0;
 		virtual void Init() = 0;
 		virtual void Initialize() = 0;
