@@ -1,6 +1,7 @@
 #pragma once
 
 
+
 namespace OP2Internal
 {
 
@@ -41,6 +42,7 @@ namespace OP2Internal
 		unsigned int _30:1;							// 0x1E 0x40000000 **
 		unsigned int _31:1;							// 0x1F 0x80000000 **
 	};
+	static_assert(4 == sizeof(UnitFlags), "Unexpected struct size");
 
 	// Size: 0x54
 	class Unit
@@ -112,6 +114,7 @@ namespace OP2Internal
 		int b5[3];						// 0x48 **
 		// ----
 	};
+	static_assert(0x54 == sizeof(Unit), "Unexpected struct size");
 
 
 
@@ -132,6 +135,7 @@ namespace OP2Internal
 		// ----
 		// ...
 	};
+	// static_assert( == sizeof(PlayerUnit), "Unexpected struct size");
 
 
 	// ** Note ** : There seems to be a missing class between PlayerUnit and Building or Vehicle,
