@@ -1,6 +1,7 @@
 #pragma once
 
 
+
 namespace OP2Internal
 {
 
@@ -16,6 +17,7 @@ namespace OP2Internal
 		int numUnits;
 		int unitIndex[32];
 	};
+	static_assert(132 == sizeof(UnitGroup), "Unexpected struct size");
 
 
 	#pragma pack(push, 1)
@@ -24,6 +26,7 @@ namespace OP2Internal
 		char numUnits;
 		short unitIndex[32];
 	};
+	static_assert(65 == sizeof(PackedUnitGroup), "Unexpected struct size");
 	#pragma pack(pop)
 
 
