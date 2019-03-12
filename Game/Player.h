@@ -1,6 +1,5 @@
 #pragma once
 
-
 #include "CommandPacket.h"
 #include "UnitGroup.h"
 #include "GameStartInfo/MoraleStartInfo.h"
@@ -20,6 +19,7 @@ namespace OP2Internal
 		int numDisabled;
 		int numIdle;
 	};
+	static_assert(16 == sizeof(BuildingStats), "Unexpected struct size");
 
 
 	// Size: 0xC24 = 3108
@@ -134,6 +134,7 @@ namespace OP2Internal
 		Unit* unknownUnitList;				// 0xC20 **
 		// ----
 	};
+	static_assert(3108 == sizeof(Player), "Unexpected struct size");
 
 
 	// Globals
