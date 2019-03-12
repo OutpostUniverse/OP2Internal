@@ -107,6 +107,3 @@ namespace OP2Internal
 	};
 
 }	// End namespace
-
-
-		// End redefinition error protection
