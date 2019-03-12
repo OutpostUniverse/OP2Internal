@@ -5,10 +5,8 @@
 
 
 #include "ScStubGroup.h"
+#include "../EnumMapId.h"
 #include "../../PointTypes.h"
-
-
-enum map_id;
 
 
 namespace OP2Internal
