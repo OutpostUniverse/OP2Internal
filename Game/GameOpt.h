@@ -1,6 +1,7 @@
 #pragma once
 
 
+
 namespace OP2Internal
 {
 
@@ -117,5 +118,6 @@ namespace OP2Internal
 		};
 		int option[numOptions];				// 26 Options
 	};
+	static_assert(104 == sizeof(GameOpt), "Unexpected struct size");
 
 }	// End namespace
