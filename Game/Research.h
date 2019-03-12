@@ -1,5 +1,7 @@
 #pragma once
 
+#include "EnumTechCategory.h"
+
 
 namespace OP2Internal
 {
@@ -9,7 +11,6 @@ namespace OP2Internal
 	struct TechInfo;
 	struct TechUpgradeInfo;
 	struct UpgradeType;
-	enum TechCategory;
 
 
 	class Research
@@ -69,25 +70,6 @@ namespace OP2Internal
 		TechUpgradeInfo* upgrade;	// 0x3C  Pointer to array of structs containing upgrade info
 		int numDependentTechs;		// 0x40  Number of technologies dependent on this one
 		int* dependentTechNum;		// 0x44  Pointer to array of techNums that depend on this tech
-	};
-
-
-	// "CATEGORY" values (for both items and upgrades to these items)
-	enum TechCategory
-	{
-		tcFree,						// 0 = Free technologies (and unavailable technologies)
-		tcBasic,					// 1 = Basic labratory sciences
-		tcDefenses,					// 2 = Defenses (GP upgrade, walls, and efficiency engineering)
-		tcPower,					// 3 = Power
-		tcVehicles,					// 4 = Vehicles (which ones can be built, speed upgrades, armor upgrades)
-		tcFood,						// 5 = Food
-		tcMetals,					// 6 = Metals gathering
-		tcWeapons,					// 7 = Weapons
-		tcSpace,					// 8 = Space (spaceport, observatory, launch vehicle, skydock)
-		tcPopulationHappiness,		// 9 = Population (happiness)
-		tcDisaster,					// 10 = Disaster warning (and defense)
-		tcPopulationGrowth,			// 11 = Population (health, growth)
-		tcSpaceshipModule,			// 12 = Spaceship module
 	};
 
 
