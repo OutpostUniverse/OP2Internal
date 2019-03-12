@@ -23,6 +23,7 @@ namespace OP2Internal
 		int b2;					// **
 		// ----------------
 	};
+	static_assert(8 == sizeof(Sheet), "Unexpected struct size");
 
 
 	// Globals
