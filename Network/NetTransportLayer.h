@@ -1,5 +1,6 @@
 #pragma once
 
+#include <rpc.h>
 
 namespace OP2Internal
 {
