@@ -140,6 +140,3 @@ namespace OP2Internal
 	// extern Player player[7];		// 0x56EF1C [TethysGame.Player[7]]
 
 }	// End namespace
-
-
-		// End redefinition error protection
