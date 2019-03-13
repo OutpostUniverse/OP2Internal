@@ -93,7 +93,7 @@ namespace OP2Internal
 		mapEnergyCannon,          // 49
 
 		mapBlast,                 // 4A EMP/Sticky foam blast
-    mapBFG,                   // 4B Unknown "BFG"
+		mapBFG,                   // 4B Unknown "BFG"
 
 		mapLightning = 0x4C,      // 4C
 		mapVortex,                // 4D
