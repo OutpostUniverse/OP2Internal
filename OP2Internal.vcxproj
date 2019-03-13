@@ -58,9 +58,13 @@
     <ClCompile Include="DummyMain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="OP2Internal.asm"/>
+    <CustomBuild Include="OP2Internal.asm" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Game\EnumMapId.h" />
+    <ClInclude Include="Game\EnumTechCategory.h" />
+    <ClInclude Include="Game\ScStub\EnumUnitClassification.h" />
+    <ClInclude Include="Game\Unit\EnumTruckCargo.h" />
     <ClInclude Include="OP2Internal.h" />
     <ClInclude Include="Game\CommandPacket.h" />
     <ClInclude Include="Game\EnumActionType.h" />
@@ -112,6 +116,7 @@
     <ClInclude Include="ResourceManagement\BitmapLightAdjustedBitmapMemoryMappedBitmap.h" />
     <ClInclude Include="ResourceManagement\BitmapLightAdjustedBitmapTileSet.h" />
     <ClInclude Include="ResourceManagement\CConfig.h" />
+    <ClInclude Include="ResourceManagement\EnumSongId.h" />
     <ClInclude Include="ResourceManagement\MusicManager.h" />
     <ClInclude Include="ResourceManagement\Palette.h" />
     <ClInclude Include="ResourceManagement\PrtGraphics.h" />
@@ -140,6 +145,9 @@
     <ClInclude Include="UserInterface\CommandPaneView\ReportViews\LabReportView.h" />
     <ClInclude Include="UserInterface\CommandPaneView\Views\BuildingStorageBayView.h" />
     <ClInclude Include="UserInterface\CommandPaneView\Views\UnitView.h" />
+    <ClInclude Include="UserInterface\Filter\EnumBehaviorType.h" />
+    <ClInclude Include="UserInterface\Filter\EnumFilterOption.h" />
+    <ClInclude Include="UserInterface\Filter\EnumFilterPosition.h" />
     <ClInclude Include="UserInterface\Filter\Filter.h" />
     <ClInclude Include="UserInterface\Filter\FilterGroupFilter.h" />
     <ClInclude Include="UserInterface\Filter\FilterGroupFilterDetailPaneFilter.h" />

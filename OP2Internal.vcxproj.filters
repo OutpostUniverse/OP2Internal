@@ -355,6 +355,30 @@
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="OP2Internal.h" />
+    <ClInclude Include="Game\EnumMapId.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\EnumTechCategory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ScStub\EnumUnitClassification.h">
+      <Filter>Game\ScStub</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Unit\EnumTruckCargo.h">
+      <Filter>Game\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagement\EnumSongId.h">
+      <Filter>ResourceManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Filter\EnumBehaviorType.h">
+      <Filter>UserInterface\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Filter\EnumFilterOption.h">
+      <Filter>UserInterface\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface\Filter\EnumFilterPosition.h">
+      <Filter>UserInterface\Filter</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Game">
