@@ -1,22 +1,11 @@
 #pragma once
 
+#include "EnumFilterOption.h"
+
 
 namespace OP2Internal
 {
-
 	class Filter;
-
-	enum FilterPositions
-	{
-		FilterPosLast = 0,
-		FilterPosFirst = 1,
-	};
-
-	enum FilterOptions
-	{
-		FilterOptMouseMessage = 1,
-		FilterOptKeyboardMessage = 2,
-	};
 
 
 	// Size: 0x14  [New, fields accessed]
@@ -26,7 +15,7 @@ namespace OP2Internal
 		FilterNode* next;				// 0x4
 		Filter* filter;					// 0x8
 		int userData;					// 0xC
-		FilterOptions filterOptions;	// 0x10
+		FilterOption filterOption;	// 0x10
 	};
 
 }	// End namespace

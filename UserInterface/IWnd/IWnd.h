@@ -1,6 +1,7 @@
 #pragma once
 
-
+#include "../Filter/EnumFilterPosition.h"
+#include "../Filter/EnumFilterOption.h"
 #include "../../WinTypes.h"
 
 
@@ -28,7 +29,7 @@ namespace OP2Internal
 		IWnd();
 		class IWnd & operator=(class IWnd const &);
 		class FilterNode * FindNode(class Filter *,int);
-		void InstallFilter(class Filter*, int userData, enum FilterPositions, enum FilterOptions);
+		void InstallFilter(class Filter*, int userData, FilterPosition filterPosition, FilterOption filterOptions);
 		void RemoveFilter(class Filter*, int userData);
 
 		// Static functions

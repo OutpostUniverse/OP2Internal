@@ -3,16 +3,13 @@
 
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
+#include "EnumSongId.h"
 
 struct DirectSoundBuffer;
 
 
 namespace OP2Internal
 {
-
-	enum SongIds;
-
-
 	class MusicManager
 	{
 	public:
@@ -39,7 +36,7 @@ namespace OP2Internal
 		void StartTimer();					// 0x450CC0 
 		void PlayPauseMusic(int bPlayMusic);// 0x450FB0
 		void SetVolume(int volumeIndex);	// 0x451170
-		void SetMusicPlaylist(int numSongs, int repeatStartIndex, SongIds songs[]);	// 0x4511B0
+		void SetMusicPlaylist(int numSongs, int repeatStartIndex, SongId songs[]);	// 0x4511B0
 
 		// Static functions
 		static void MusicTimerCallback();	// 0x450CF0
@@ -62,7 +59,7 @@ namespace OP2Internal
 		CRITICAL_SECTION criticalSection;		// 0xAC [Controls access to +0xA8]
 		int numPlaylistEntries;					// 0xC4
 		int repeatStartIndex;					// 0xC8
-		SongIds* playlist;						// 0xCC int[]*
+		SongId* playlist;						// 0xCC int[]*
 		int currentPlayingSongIndex;			// 0xD0 [PlayList index]
 		int bHasBegunPlayback;					// 0xD4 [Has Playback begun at the first song yet]
 		int currentSongFileIndex;				// 0xD8 [Clm file index]

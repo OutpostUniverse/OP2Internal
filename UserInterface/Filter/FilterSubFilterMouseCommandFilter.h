@@ -2,15 +2,14 @@
 
 
 #include "FilterSubFilter.h"
+#include "EnumBehaviorType.h"
 #include "../../PointTypes.h"
 
 
 namespace OP2Internal
 {
-
 	class BoolState;
 	class Pane;
-	enum BehaviorType;
 
 
 	class MouseCommandFilter : public SubFilter
@@ -62,18 +61,6 @@ namespace OP2Internal
 		int b7;						// 0x3C **  
 		// ...?
 	};
-
-
-	enum BehaviorType
-	{
-		BandboxUnitSelect = 0,		// Left-clicking starts drawing a bandbox
-		SetRectRegion = 1,			// Bulldoze or Salvage region
-		SetBuildLocation = 2,		// Highlight area under mouse (tile aligned, multicoloured region)
-		SetDest = 3,				// Left-click to set destination (Attack, Move, etc.) (don't select units)
-		SetLineRegion = 4,			// Build Tube, Wall, Lava Wall, or Microbe Wall
-		MouseDisabled = 5,			// Arrow cursor, clicking is disabled (including Right-click)
-	};
-
 
 
 	extern MouseCommandFilter mouseCommandFilter;		// 0x5471B0

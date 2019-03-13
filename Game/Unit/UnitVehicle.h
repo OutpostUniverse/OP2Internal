@@ -1,7 +1,7 @@
 #pragma once
 
-
 #include "Unit.h"
+#include "EnumTruckCargo.h"
 
 
 namespace OP2Internal
@@ -38,7 +38,7 @@ namespace OP2Internal
 		// ----  [Overridden base class functions]
 		// ... **TODO**
 		// ----  [New virtual functions]
-		virtual void SetCargo(enum Truck_Cargo truckCargo, int cargoAmountOrTechID, short a2);	// 0x94 **
+		virtual void SetCargo(TruckCargo truckCargo, int cargoAmountOrTechID, short a2);	// 0x94 **
 		virtual void F9();							// 0x98 **
 		// ----
 	};
