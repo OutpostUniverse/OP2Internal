@@ -1,15 +1,12 @@
 #pragma once
 
 #include "ScStub.h"
-
-
-enum UnitClassifactions;
-enum map_id;
+#include "EnumUnitClassification.h"
+#include "../EnumMapId.h"
 
 
 namespace OP2Internal
 {
-
 	class Unit;
 
 
@@ -23,7 +20,7 @@ namespace OP2Internal
 		UnitNode* next;						// 0x04
 		Unit* unit;							// 0x08
 		int issueCommandTick;				// 0x0C ** [Set to 0xFFF00000 when adding unit to group, related to gameTick and deleteWhenEmpty]
-		UnitClassifactions classification;	// 0x10
+		UnitClassification classification;	// 0x10
 		// ----
 	};
 
