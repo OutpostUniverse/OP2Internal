@@ -31,10 +31,10 @@ namespace OP2Internal
 		virtual void ReallocSurface(int zoom);
 		virtual void Draw();
 		virtual void F1();											// **
-		virtual bool GetAbsolutePos(int pixelX, int pixelY, Point* absolutePos);
+		virtual bool GetAbsolutePos(int pixelX, int pixelY, Point& absolutePos);
 
 		// [New] Virtual member functions
-		virtual void ButtonClick(MiniMapButton* miniMapButton);
+		virtual void ButtonClick(MiniMapButton& miniMapButton);
 		virtual int  F2(int a1, int a2, int a3);					// **
 
 		// Non virtual member functions

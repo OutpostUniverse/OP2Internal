@@ -131,7 +131,7 @@ ExportVirt 0x00460BC0, ?DlgProc@MultiplayerPreGameSetupWnd@OP2Internal@@UAEHIIJ@
 ; Constructor/Destructor
 Export 0x0045F050, ??0MultiplayerPreGameSetupWnd@OP2Internal@@QAE@XZ
 ; Member functions
-Export 0x0045F0D0, ?ShowHostGame@MultiplayerPreGameSetupWnd@OP2Internal@@QAE_NPAUHostGameParameters@2@@Z
+Export 0x0045F0D0, ?ShowHostGame@MultiplayerPreGameSetupWnd@OP2Internal@@QAE_NAAUHostGameParameters@2@@Z
 Export 0x0045F2F0, ?ShowJoinGame@MultiplayerPreGameSetupWnd@OP2Internal@@QAE_NPADH_N@Z
 
 

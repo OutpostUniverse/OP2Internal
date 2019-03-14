@@ -47,13 +47,12 @@ namespace OP2Internal
 		// Virtual member functions (TFrame)
 		// ---------------------------------
 		virtual void ShutDown();
-		// Note: Insert 5 virtual members here
-		virtual void TFrame_F1(UIState*);
-		virtual void TFrame_F2(unsigned int controlId);
+
+		virtual void GetUIState(UIState& uiState);
+		virtual void DoCommand(unsigned int controlId);
 		virtual void TranslateAccelerators(MSG* msg);
 		virtual void Init();
 		virtual void Initialize();
-		// Note: End extra 5 virtual members
 		virtual void Activate();
 		virtual void Deactivate();
 		virtual void OnIdle();

@@ -37,8 +37,8 @@ namespace OP2Internal
 
 		// Non virtual member functions
 		MultiplayerPreGameSetupWnd();															// 0x0045F050
-		bool ShowHostGame(HostGameParameters* hostGameParameters);								// 0x0045F0D0
-		bool ShowJoinGame(char* playerName, int hostPlayerNetID, bool bPurgedDroppedPlayers);	// 0x0045F2F0
+		bool ShowHostGame(HostGameParameters& hostGameParameters);								// 0x0045F0D0
+		bool ShowJoinGame(char* playerName, int hostPlayerNetID, bool bPurgeDroppedPlayers);	// 0x0045F2F0
 
 	public:
 		// Member variables
