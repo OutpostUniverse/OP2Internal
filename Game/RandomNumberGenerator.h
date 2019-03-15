@@ -1,6 +1,5 @@
 #pragma once
 
-
 #include "../WinTypes.h"
 
 
@@ -22,6 +21,7 @@ namespace OP2Internal
 		unsigned int dword1;	// 0x0
 		unsigned int dword2;	// 0x4
 	};
+	static_assert(8 == sizeof(RandomNumberGenerator), "Unexpected struct size");
 
 
 	// Globals

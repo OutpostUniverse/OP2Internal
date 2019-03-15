@@ -18,6 +18,7 @@ namespace OP2Internal
 		int timeStamp;					// 0x06
 		int unknown;					// 0x0A **
 	};
+	static_assert(14 == sizeof(CommandPacketHeader), "Unexpected struct size");
 	#pragma pack(pop)
 
 
@@ -27,6 +28,7 @@ namespace OP2Internal
 		CommandPacketHeader cpHeader;
 		char data[99];					// 0x0E ** [Need adjustment after pragma pack?]
 	};
+	static_assert(113 == sizeof(CommandPacket), "Unexpected struct size");
 
 
 	namespace CP
@@ -43,17 +45,22 @@ namespace OP2Internal
 			char numUnits;		// If negative, then hot key group?
 			short unitIndex[1];	// List of unit indexes
 		};
+		static_assert(3 == sizeof(UnitList), "Unexpected struct size");  // Note: Variable dynamic size
 
 		struct WaypointList
 		{
 			short numWaypoints;
 			Waypoint waypoint[1];
 		};
+		static_assert(6 == sizeof(WaypointList), "Unexpected struct size");  // Note: Variable dynamic size
+
 		struct ShortPoint
 		{
 			short x;
 			short y;
 		};
+		static_assert(4 == sizeof(ShortPoint), "Unexpected struct size");
+
 		union ShortRect
 		{
 			struct
@@ -71,6 +78,7 @@ namespace OP2Internal
 				ShortPoint bottomRight;
 			};
 		};
+		static_assert(8 == sizeof(ShortRect), "Unexpected struct size");
 
 
 		// Data structs
@@ -85,6 +93,7 @@ namespace OP2Internal
 			short mineUnitIndex;
 			short smelterUnitIndex;
 		};
+		static_assert(8 == sizeof(CargoRoute), "Unexpected struct size");
 
 		struct Patrol
 		{
@@ -93,6 +102,7 @@ namespace OP2Internal
 			short unknown1;		// ** Probably waypoint indexes of end patrol endpoints
 			short unknown2;		// **
 		};
+		static_assert(4 == sizeof(Patrol), "Unexpected struct size");
 
 		struct Build
 		{
@@ -101,6 +111,7 @@ namespace OP2Internal
 			ShortRect buildArea;
 			short unknown;		// ** Might be scStubIndex (related to BuildGroup), set to -1 if not used
 		};
+		static_assert(10 == sizeof(Build), "Unexpected struct size");
 
 		struct BuildWall
 		{
@@ -110,6 +121,7 @@ namespace OP2Internal
 			short tubeWallType;	// enum map_id
 			short unknown;		// ** Might be scStubIndex (related to BuildGroup), set to 0 if not used
 		};
+		static_assert(12 == sizeof(BuildWall), "Unexpected struct size");
 
 		struct RemoveWall
 		{
@@ -117,6 +129,7 @@ namespace OP2Internal
 			//WaypointList
 			ShortRect removeArea;
 		};
+		static_assert(8 == sizeof(RemoveWall), "Unexpected struct size");
 
 		struct Produce
 		{
@@ -125,6 +138,7 @@ namespace OP2Internal
 			short weaponType;			// 0x12 enum map_id
 			short scStubIndex;			// 0x14 -1 if not used
 		};
+		static_assert(8 == sizeof(Produce), "Unexpected struct size");
 
 		struct TransferCargo
 		{
@@ -132,27 +146,32 @@ namespace OP2Internal
 			short bayIndex;				// 0x10
 			short unknown;				// 0x12 ** Might be scStubIndex, set to 0 if not used
 		};
+		static_assert(6 == sizeof(TransferCargo), "Unexpected struct size");
 
 		struct LoadUnloadCargo
 		{
 			short buildingUnitIndex;
 		};
+		static_assert(2 == sizeof(LoadUnloadCargo), "Unexpected struct size");
 
 		struct Recycle
 		{
 			short unitIndex;
 			short unknown;		// **
 		};
+		static_assert(4 == sizeof(Recycle), "Unexpected struct size");
 
 		struct DumpCargo
 		{
 			short unitIndex;
 		};
+		static_assert(2 == sizeof(DumpCargo), "Unexpected struct size");
 
 		struct Idle
 		{
 			short buildingUnitIndex;
 		};
+		static_assert(2 == sizeof(Idle), "Unexpected struct size");
 
 		struct SelfDestruct
 		{
@@ -170,18 +189,21 @@ namespace OP2Internal
 			short techIndex;
 			short numScientists;
 		};
+		static_assert(6 == sizeof(Research), "Unexpected struct size");
 
 		struct Train
 		{
 			short universityUnitIndex;
 			short numTrain;
 		};
+		static_assert(4 == sizeof(Train), "Unexpected struct size");
 
 		struct Transfer
 		{
 			//UnitList
 			short destPlayerNum;	// Note: *Write short, read char*
 		};
+		static_assert(2 == sizeof(Transfer), "Unexpected struct size");
 
 		struct Launch
 		{
@@ -189,6 +211,7 @@ namespace OP2Internal
 			short destPixelX;
 			short destPixelY;
 		};
+		static_assert(6 == sizeof(Launch), "Unexpected struct size");
 
 		struct Salvage
 		{
@@ -196,6 +219,7 @@ namespace OP2Internal
 			ShortRect salvageArea;
 			short unknown;		// **
 		};
+		static_assert(12 == sizeof(Salvage), "Unexpected struct size");
 
 		struct CreateUnitInfo
 		{
@@ -204,17 +228,20 @@ namespace OP2Internal
 			short tileY;
 			int weaponOrCargo;	// enum map_id
 		};
+		static_assert(12 == sizeof(CreateUnitInfo), "Unexpected struct size");
 		struct Create
 		{
 			short numUnits;
 			CreateUnitInfo createUnitInfo[1];	// **
 		};
+		static_assert(14 == sizeof(Create), "Unexpected struct size");   // Note: Variable dynamic size
 
 		struct SetLights
 		{
 			//UnitList
 			short newState;		// 0 = off, 1 = on
 		};
+		static_assert(2 == sizeof(SetLights), "Unexpected struct size");
 
 		struct Attack
 		{
@@ -229,11 +256,13 @@ namespace OP2Internal
 				};
 			};
 		};
+		static_assert(6 == sizeof(Attack), "Unexpected struct size");
 
 		struct Poof
 		{
 			short unitIndex;
 		};
+		static_assert(2 == sizeof(Poof), "Unexpected struct size");
 
 		// Variables not defined here are assumed to be dword indexes into TethysGame object
 		enum GameOptVariable
@@ -276,6 +305,7 @@ namespace OP2Internal
 			// ---- Only used by specific variables
 			short playerIndex;
 		};
+		static_assert(8 == sizeof(GameOpt), "Unexpected struct size");
 
 		struct Chat
 		{
@@ -283,6 +313,7 @@ namespace OP2Internal
 			char destPlayerBitMask;
 			char message[1];
 		};
+		static_assert(3 == sizeof(Chat), "Unexpected struct size");  // Note: Variable dynamic size
 
 		enum QuitMethod
 		{
@@ -295,12 +326,14 @@ namespace OP2Internal
 			char quitMethod;
 			char lParam;
 		};
+		static_assert(2 == sizeof(Quit), "Unexpected struct size");
 
 		struct Ally
 		{
 			short fromPlayerIndex;	// Note: *Never read*
 			short toPlayerIndex;	// Note: *Write short, read char*
 		};
+		static_assert(4 == sizeof(Ally), "Unexpected struct size");
 
 		struct GoAI
 		{
@@ -314,6 +347,7 @@ namespace OP2Internal
 			short windowWidth;				// Dans_RULE_UIFrame
 			short windowHeight;				// Dans_RULE_UIFrame
 		};
+		static_assert(8 == sizeof(MachineSettings), "Unexpected struct size");
 	}
 
 	#pragma pack(pop)

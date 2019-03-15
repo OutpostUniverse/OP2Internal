@@ -47,5 +47,6 @@ namespace OP2Internal
 		int a3Index;					// 0x3E4 ** (Index into a list of objects with 5 function pointers each)
 		// ----
 	};
+	static_assert(0x3E8 == sizeof(CombatBase), "Unexpected struct size");
 
 }	// End namespace
