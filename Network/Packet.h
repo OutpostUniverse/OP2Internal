@@ -232,7 +232,7 @@ namespace OP2Internal
 		};
 
 		// Member functions
-		int Checksum();
+		int Checksum() const;
 	};
 
 
