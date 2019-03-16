@@ -221,10 +221,8 @@ namespace OP2Internal
 	// Packet
 	// ------
 
-	class Packet
+	struct Packet
 	{
-	public:
-		// Member variables
 		PacketHeader header;
 		union
 		{
@@ -233,9 +231,8 @@ namespace OP2Internal
 			GameMessage gameMessage;
 		};
 
-	public:
 		// Member functions
-		int Checksum();
+		int Checksum() const;
 	};
 
 
