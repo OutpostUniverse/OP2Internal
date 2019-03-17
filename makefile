@@ -22,15 +22,20 @@ POSTCOMPILE = @mv -f $(DEPDIR)/$*.Td $(DEPDIR)/$*.d && touch $@
 
 SRCS := $(shell find $(SRCDIR) -maxdepth 1 -name '*.cpp')
 OBJS := $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SRCS))
+ASMSRCS :=  $(shell find $(SRCDIR) -maxdepth 1 -name '*.asm')
+ASMOBJS := $(patsubst $(SRCDIR)/%.asm,$(OBJDIR)/%.obj,$(ASMSRCS))
 FOLDERS := $(sort $(dir $(SRCS)))
 
 .PHONY:default, all
 default: all
 all: $(OUTPUT)
 
-$(OUTPUT): $(OBJS)
+$(OUTPUT): $(OBJS) $(ASMOBJS)
 	@mkdir -p ${@D}
 	ar rcs $@ $^
+
+$(ASMOBJS): $(OBJDIR)/%.obj : $(SRCDIR)/%.asm | build-folder
+	nasm -f win32 -o $@ $^
 
 $(OBJS): $(OBJDIR)/%.o : $(SRCDIR)/%.cpp $(DEPDIR)/%.d | build-folder
 	$(COMPILE.cpp) $(OUTPUT_OPTION) $<
