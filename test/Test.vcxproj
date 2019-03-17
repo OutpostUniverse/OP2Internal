@@ -28,7 +28,7 @@
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OP2Internal.vcxproj">
+    <ProjectReference Include="..\src\OP2Internal.vcxproj">
       <Project>{97594bb1-793f-379b-f6ab-040ac8fe1424}</Project>
     </ProjectReference>
   </ItemGroup>

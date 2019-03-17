@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OP2Internal", "OP2Internal.vcxproj", "{97594BB1-793F-379B-F6AB-040AC8FE1424}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OP2Internal", "src\OP2Internal.vcxproj", "{97594BB1-793F-379B-F6AB-040AC8FE1424}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "test\Test.vcxproj", "{838DFFC0-2FE2-4E4C-86F4-9DFD3BC976E7}"
 EndProject
