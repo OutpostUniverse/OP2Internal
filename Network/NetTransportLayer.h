@@ -5,7 +5,7 @@
 namespace OP2Internal
 {
 
-	class Packet;
+	struct Packet;
 
 
 	struct TrafficCounters
