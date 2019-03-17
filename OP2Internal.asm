@@ -12,7 +12,7 @@
 ; You must set the following to the load address of the DLL
 ; to ensure proper linking to the functions in Outpost2.exe
 ; *********************
-LoadAddr EQU 0x11000000
+LoadAddr EQU 0x14000000
 ; *********************
 
 
