@@ -489,7 +489,7 @@ Export 0x004C1380, ??3GurManager@OP2Internal@@SAXPAX@Z		; operator Delete
 ; Packet
 ; ------
 ; Member functions
-Export 0x00490F10, ?Checksum@Packet@OP2Internal@@QAEHXZ
+Export 0x00490F10, ?Checksum@Packet@OP2Internal@@QBEHXZ
 
 
 
