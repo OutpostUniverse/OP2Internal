@@ -5,7 +5,7 @@
 # Set compiler to mingw (can still override from command line)
 CXX := i686-w64-mingw32-g++
 
-SRCDIR := .
+SRCDIR := src
 BUILDDIR := .build
 BINDIR := $(BUILDDIR)/bin
 OBJDIR := $(BUILDDIR)/obj
@@ -20,9 +20,9 @@ DEPFLAGS = -MT $@ -MMD -MP -MF $(DEPDIR)/$*.Td
 COMPILE.cpp = $(CXX) $(DEPFLAGS) $(CPPFLAGS) $(CXXFLAGS) $(TARGET_ARCH) -c
 POSTCOMPILE = @mv -f $(DEPDIR)/$*.Td $(DEPDIR)/$*.d && touch $@
 
-SRCS := $(shell find $(SRCDIR) -maxdepth 1 -name '*.cpp')
+SRCS := $(shell find $(SRCDIR) -name '*.cpp')
 OBJS := $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SRCS))
-ASMSRCS :=  $(shell find $(SRCDIR) -maxdepth 1 -name '*.asm')
+ASMSRCS :=  $(shell find $(SRCDIR) -name '*.asm')
 ASMOBJS := $(patsubst $(SRCDIR)/%.asm,$(OBJDIR)/%.obj,$(ASMSRCS))
 FOLDERS := $(sort $(dir $(SRCS)))
 
