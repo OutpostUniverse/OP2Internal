@@ -26,7 +26,7 @@ ASMSRCS :=  $(shell find $(SRCDIR) -name '*.asm')
 ASMOBJS := $(patsubst $(SRCDIR)%.asm,$(OBJDIR)%.obj,$(ASMSRCS))
 FOLDERS := $(sort $(dir $(SRCS)))
 
-.PHONY:default, all
+.PHONY: default all
 default: all
 all: $(OUTPUT)
 
@@ -41,7 +41,7 @@ $(OBJS): $(OBJDIR)%.o : $(SRCDIR)%.cpp $(DEPDIR)%.d | build-folder
 	$(COMPILE.cpp) $(OUTPUT_OPTION) $<
 	$(POSTCOMPILE)
 
-.PHONY:build-folder
+.PHONY: build-folder
 build-folder:
 	@mkdir -p $(patsubst $(SRCDIR)%,$(OBJDIR)%, $(FOLDERS))
 	@mkdir -p $(patsubst $(SRCDIR)%,$(DEPDIR)%, $(FOLDERS))
@@ -51,7 +51,7 @@ $(DEPDIR)%.d: ;
 
 include $(wildcard $(patsubst $(SRCDIR)%.cpp,$(DEPDIR)%.d,$(SRCS)))
 
-.PHONY:clean, clean-all
+.PHONY: clean clean-all
 clean:
 	-rm -rf $(BUILDDIR)
 clean-all:
