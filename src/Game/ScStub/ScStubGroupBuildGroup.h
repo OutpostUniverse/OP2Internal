@@ -24,10 +24,10 @@ namespace OP2Internal
 	// Size: 0x1C (28 bytes)
 	struct RecordedMine
 	{
-		Rect mineTileRect;				// 0x00
+		Rect mineRectInTiles;			// 0x00
 		map_id mineType;				// 0x10
-		int groupScStubIndex;			// 0x14 **
-		int a4;							// 0x18 **
+		int buildGroupScStubIndex;		// 0x14 **
+		int minerUnitIndex;				// 0x18 **
 	};
 
 	// Size: 0x0C (12 bytes)
@@ -65,13 +65,13 @@ namespace OP2Internal
 			int numRecordedMines;				 // 0x32C
 			int numRecordedTubesWalls;			 // 0x330
 			int numRecordedVehGroup;			 // 0x334
-			Rect defaultPixelRect;				 // 0x338
+			Rect defaultRectInPixels;			 // 0x338
 			int a18;							 // 0x348 ** (=0) (Index into function pointer table)
+			int convecUnitIndex;				 // 0x34C (TransferCargo related)
+			int factoryUnitIndex;				 // 0x350 (TransferCargo related)
+			int recordedBuildingIndex;			 // 0x354 (TransferCargo related)
+			int factoryBayIndex;				 // 0x358 (TransferCargo related)
 		};
-		int convecUnitIndex;					// 0x34C (TransferCargo related)
-		int factoryUnitIndex;					// 0x350 (TransferCargo related)
-		int recordedBuildingIndex;				// 0x354 (TransferCargo related)
-		int factoryBayIndex;					// 0x358 (TransferCargo related)
 		// ----
 	};
 

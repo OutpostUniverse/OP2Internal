@@ -14,13 +14,23 @@ namespace OP2Internal
 	struct UnitNode
 	{
 		union {
-			int nextFreeIndex;				// 0x00
-			UnitNode* prev;					// 0x00
+			int nextFreeIndex;					// 0x00
+			UnitNode* prev;						// 0x00
 		};
-		UnitNode* next;						// 0x04
-		Unit* unit;							// 0x08
-		int issueCommandTick;				// 0x0C ** [Set to 0xFFF00000 when adding unit to group, related to gameTick and deleteWhenEmpty]
-		UnitClassification classification;	// 0x10
+		UnitNode* next;							// 0x04
+		Unit* unit;								// 0x08
+		int issueCommandTick;					// 0x0C ** [Set to 0xFFF00000 when adding unit to group, related to gameTick and deleteWhenEmpty]
+		UnitClassification unitClassification;	// 0x10
+		// ----
+	};
+
+	// Size: 0x10
+	struct UnitTypeTargetCount
+	{
+		map_id unitType;			// 0x00
+		map_id weaponType;			// 0x04
+		int targetCount;			// 0x08
+		int a2;						// 0x0C ** currentCount?
 		// ----
 	};
 
@@ -29,11 +39,11 @@ namespace OP2Internal
 	{
 	public:
 	public:
-		int a1;					// 0x00 **
-		void* a2;				// 0x04 **
-		int groupScStubIndex;	// 0x08
-		int a3;					// 0x0C **
-		int a4;					// 0x10 **
+		int numAllocatedUnitTypeTargetCounts;		// 0x00
+		UnitTypeTargetCount* unitTypeTargetCounts;	// 0x04 UnitTypeTargetCount[]*
+		int groupScStubIndex;						// 0x08
+		int numUnitTypeTargetCounts;				// 0x0C
+		int a4;										// 0x10 **
 		// ----
 	};
 
