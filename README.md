@@ -1,6 +1,6 @@
 # OP2Internal
 
-OP2Internal (formally ForcedExports) allows direct access to internal functions and data defined in Outpost2.exe, particularly those that may not be exported through the regular API. It is typically compiled for Windows using Visual Studio.
+OP2Internal (formerly named ForcedExports) allows direct access to internal functions and data defined in Outpost2.exe, particularly those that may not be exported through the regular API. It is typically compiled for Windows using Visual Studio.
 
 OP2Internal relies on the Netwide Assembler (NASM) to compile an assembly language file (.asm). NASM is not bundled with Visual Studio, so it will need to be installed separately. Before compiling:
 
