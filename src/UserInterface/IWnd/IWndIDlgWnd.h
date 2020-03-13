@@ -1,12 +1,10 @@
 #pragma once
 
-
 #include "IWnd.h"
 
 
 namespace OP2Internal
 {
-
 	// Size: 0x20
 	class IDlgWnd : public IWnd
 	{
@@ -18,6 +16,7 @@ namespace OP2Internal
 
 		static int nModelessCount;
 		static IDlgWnd* pFirst;
+
 	public:
 		// Virtual member functions
 		virtual ~IDlgWnd();
@@ -36,7 +35,6 @@ namespace OP2Internal
 		static HWND __fastcall GetModalParent();
 		static int __fastcall PretranslateModeless(struct tagMSG*);
 
-	public:
 		// Member variables
 		// ----------------
 		// vtbl
@@ -55,4 +53,4 @@ namespace OP2Internal
 	// Global functions
 	int __fastcall MsgBox(HWND hOwnerWnd, const char* message, const char* title, int flags);	// 0x0041E0E0
 
-}	// End namespace
+}
