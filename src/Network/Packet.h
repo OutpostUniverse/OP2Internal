@@ -53,6 +53,15 @@ namespace OP2Internal
 		tlcEchoExternalAddress = 12,
 	};
 
+	enum class PeerStatus : short
+	{
+		EmptySlot,
+		Joining, // Joining Player Cleaned from list
+		Normal,
+		ReplicateSuccess, // Successfully replicated players list
+		ReplicateFailure  // Failed to replicate players list
+	};
+
 
 	// ****************************************
 
@@ -65,7 +74,7 @@ namespace OP2Internal
 	{
 		int ip;
 		short port;
-		short status;
+		PeerStatus status;
 		int playerNetID;
 	};
 
@@ -103,7 +112,7 @@ namespace OP2Internal
 
 	struct StatusUpdate : public TransportLayerHeader
 	{
-		short newStatus;
+		PeerStatus newStatus;
 	};
 
 
