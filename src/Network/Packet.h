@@ -147,17 +147,17 @@ namespace OP2Internal
 	};
 
 
-	enum PokeStatusCode
+	enum class PokeStatusCode : int
 	{
-		pscGameHosted = 0,
-		pscGameStarted = 1,
-		pscGameCancelled = 2,
-		pscGameDropped = 3,
+		GameHosted = 0,
+		GameStarted = 1,
+		GameCancelled = 2,
+		GameDropped = 3,
 	};
 
 	struct GameServerPoke : public TransportLayerHeader
 	{
-		int statusCode;
+		PokeStatusCode statusCode;
 		int randValue;
 	};
 
