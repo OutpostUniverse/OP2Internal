@@ -35,22 +35,22 @@ namespace OP2Internal
 	// Transport Layer messages
 	// ************************
 
-	enum TransportLayerCommandType
+	enum class TransportLayerCommand : int
 	{
-		tlcJoinRequest = 0,
-		tlcJoinGranted = 1,
-		tlcJoinRefused = 2,
-		tlcStartGame = 3,
-		tlcSetPlayersList = 4,
-		tlcSetPlayersListFailed = 5,
-		tlcUpdateStatus = 6,
+		JoinRequest = 0,
+		JoinGranted = 1,
+		JoinRefused = 2,
+		StartGame = 3,
+		SetPlayersList = 4,
+		SetPlayersListFailed = 5,
+		UpdateStatus = 6,
 		// Custom message types
-		tlcHostedGameSearchQuery = 7,
-		tlcHostedGameSearchReply = 8,
-		tlcGameServerPoke = 9,
-		tlcJoinHelpRequest = 10,
-		tlcRequestExternalAddress = 11,
-		tlcEchoExternalAddress = 12,
+		HostedGameSearchQuery = 7,
+		HostedGameSearchReply = 8,
+		GameServerPoke = 9,
+		JoinHelpRequest = 10,
+		RequestExternalAddress = 11,
+		EchoExternalAddress = 12,
 	};
 
 	enum class PeerStatus : short
@@ -80,7 +80,7 @@ namespace OP2Internal
 
 	struct TransportLayerHeader
 	{
-		TransportLayerCommandType commandType;
+		TransportLayerCommand commandType;
 	};
 
 	struct JoinRequest : public TransportLayerHeader
