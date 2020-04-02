@@ -140,6 +140,9 @@ extern "C" void* desiredLoadAddress;
 
 namespace OP2Internal
 {
+	// Composes a string with the same text that would be printed if format was used on printf, 
+	// but instead of being printed, the content is stored as a C string in the destination buffer
+	// See standard library snprintf for further usage notes
 	int scr_snprintf(char* dest, unsigned int bufferSize, char const * format, ...);
 
 
